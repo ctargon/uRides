@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFC709A51C248EBA0093C7DA"
+               BlueprintIdentifier = "DF7B14251C2894F900DDE87E"
                BuildableName = "uRides.app"
                BlueprintName = "uRides"
                ReferencedContainer = "container:uRides.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFC709BD1C248EBA0093C7DA"
+               BlueprintIdentifier = "DF7B143C1C2894F900DDE87E"
                BuildableName = "uRidesTests.xctest"
                BlueprintName = "uRidesTests"
                ReferencedContainer = "container:uRides.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFC709C81C248EBA0093C7DA"
+               BlueprintIdentifier = "DF7B14471C2894F900DDE87E"
                BuildableName = "uRidesUITests.xctest"
                BlueprintName = "uRidesUITests"
                ReferencedContainer = "container:uRides.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFC709A51C248EBA0093C7DA"
+            BlueprintIdentifier = "DF7B14251C2894F900DDE87E"
             BuildableName = "uRides.app"
             BlueprintName = "uRides"
             ReferencedContainer = "container:uRides.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFC709A51C248EBA0093C7DA"
+            BlueprintIdentifier = "DF7B14251C2894F900DDE87E"
             BuildableName = "uRides.app"
             BlueprintName = "uRides"
             ReferencedContainer = "container:uRides.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFC709A51C248EBA0093C7DA"
+            BlueprintIdentifier = "DF7B14251C2894F900DDE87E"
             BuildableName = "uRides.app"
             BlueprintName = "uRides"
             ReferencedContainer = "container:uRides.xcodeproj">
