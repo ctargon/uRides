@@ -2,8 +2,8 @@
 //  uRidesUITests.swift
 //  uRidesUITests
 //
-//  Created by Colin Targonski on 12/18/15.
-//  Copyright © 2015 uRides. All rights reserved.
+//  Created by Colin Targonski on 12/21/15.
+//  Copyright © 2015 uRides Corporation. All rights reserved.
 //
 
 import XCTest
