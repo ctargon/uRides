@@ -18,3 +18,9 @@ git push origin master - puts all my data to the cloud
 
 git log - check the most recent commits to the master 
 
+**********************************************IMPORTANT RESET COMMAND***********************************************
+git fetch --all
+git reset --hard origin/master
+
+-> The above command will reset your local directory with everything that is currently on the master directory if you have
+   any merging conflicts like I was having.
