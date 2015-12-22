@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c2Z-NS-hIx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cbD-pI-f9B">
+            <objects>
+                <viewController id="c2Z-NS-hIx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u28-Rv-CXD"/>
+                        <viewControllerLayoutGuide type="bottom" id="enC-47-cby"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eYg-eI-cLZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feo-Tn-4jA" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="800" id="At2-gG-v55"/>
+                                    <constraint firstAttribute="width" constant="400" id="Zsc-nw-V0c"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="At2-gG-v55"/>
+                                        <exclude reference="Zsc-nw-V0c"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="At2-gG-v55"/>
+                                        <include reference="Zsc-nw-V0c"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="BXw-rM-5Ji" userLabel="Logo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="jPc-0r-5ga"/>
+                                    <constraint firstAttribute="height" constant="158" id="yXL-Eo-M22"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jPc-0r-5ga"/>
+                                        <exclude reference="yXL-Eo-M22"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jPc-0r-5ga"/>
+                                        <include reference="yXL-Eo-M22"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKT-3W-Wdv" userLabel="signUp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Kor-Dj-GQS">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="40" id="aNV-Bq-9I4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kor-Dj-GQS"/>
+                                        <exclude reference="aNV-Bq-9I4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Kor-Dj-GQS"/>
+                                        <include reference="aNV-Bq-9I4"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCn-gW-9b7" userLabel="logIn ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0ZU-4m-Ox5"/>
+                                    <constraint firstAttribute="width" constant="135" id="9qi-EL-N5g">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Log In ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0ZU-4m-Ox5"/>
+                                        <exclude reference="9qi-EL-N5g"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0ZU-4m-Ox5"/>
+                                        <include reference="9qi-EL-N5g"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eKT-3W-Wdv" firstAttribute="top" secondItem="kCn-gW-9b7" secondAttribute="bottom" constant="15" id="DPU-pJ-KYL"/>
+                            <constraint firstItem="BXw-rM-5Ji" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="XYI-yj-CDc"/>
+                            <constraint firstItem="eKT-3W-Wdv" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="bu7-Gv-Aoa"/>
+                            <constraint firstItem="BXw-rM-5Ji" firstAttribute="top" secondItem="eYg-eI-cLZ" secondAttribute="topMargin" constant="175" id="cvd-oH-jVg"/>
+                            <constraint firstItem="kCn-gW-9b7" firstAttribute="top" secondItem="BXw-rM-5Ji" secondAttribute="bottom" constant="175" id="czX-VU-oa4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="feo-Tn-4jA" firstAttribute="centerY" secondItem="eYg-eI-cLZ" secondAttribute="centerY" id="iHq-B2-gU3"/>
+                            <constraint firstItem="kCn-gW-9b7" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="k9g-zb-fEI"/>
+                            <constraint firstItem="feo-Tn-4jA" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="qKN-my-2oM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="feo-Tn-4jA"/>
+                                <exclude reference="BXw-rM-5Ji"/>
+                                <exclude reference="eKT-3W-Wdv"/>
+                                <exclude reference="kCn-gW-9b7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DPU-pJ-KYL"/>
+                                <exclude reference="bu7-Gv-Aoa"/>
+                                <exclude reference="czX-VU-oa4"/>
+                                <exclude reference="k9g-zb-fEI"/>
+                                <exclude reference="XYI-yj-CDc"/>
+                                <exclude reference="cvd-oH-jVg"/>
+                                <exclude reference="iHq-B2-gU3"/>
+                                <exclude reference="qKN-my-2oM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="feo-Tn-4jA"/>
+                                <include reference="BXw-rM-5Ji"/>
+                                <include reference="eKT-3W-Wdv"/>
+                                <include reference="kCn-gW-9b7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DPU-pJ-KYL"/>
+                                <include reference="bu7-Gv-Aoa"/>
+                                <include reference="czX-VU-oa4"/>
+                                <include reference="k9g-zb-fEI"/>
+                                <include reference="XYI-yj-CDc"/>
+                                <include reference="cvd-oH-jVg"/>
+                                <include reference="iHq-B2-gU3"/>
+                                <include reference="qKN-my-2oM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8H-tk-gwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="211.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="834" height="464"/>
+    </resources>
+</document>
