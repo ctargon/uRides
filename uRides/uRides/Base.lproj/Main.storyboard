@@ -56,6 +56,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstAttribute="bottom" secondItem="3TF-t7-jhz" secondAttribute="bottom" constant="100" id="8mc-NY-axU"/>
                             <constraint firstItem="mxk-hF-959" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="205" id="BOH-5B-dWs"/>
                             <constraint firstAttribute="trailing" secondItem="91b-uF-DB1" secondAttribute="trailing" constant="150" id="Ewp-Cd-3Tl"/>
@@ -76,6 +77,20 @@
                             <constraint firstItem="mxk-hF-959" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="510" id="pVz-7D-CZN"/>
                             <constraint firstAttribute="bottomMargin" secondItem="mxk-hF-959" secondAttribute="bottom" constant="65" id="ug5-Yh-Hsr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mxk-hF-959" secondAttribute="trailing" constant="205" id="y78-Dh-Vhy"/>
+=======
+                            <constraint firstItem="rfv-PI-RYS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Zh-wt-eEl"/>
+                            <constraint firstAttribute="trailing" secondItem="rfv-PI-RYS" secondAttribute="trailing" id="8Mt-yr-6Rf"/>
+                            <constraint firstItem="WF0-jS-eeb" firstAttribute="leading" secondItem="oxD-Pu-4Z9" secondAttribute="leading" id="8Xq-ox-Bg4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oxD-Pu-4Z9" secondAttribute="bottom" constant="25" id="T8o-Tn-nlP"/>
+                            <constraint firstItem="91b-uF-DB1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vv3-co-jwk"/>
+                            <constraint firstItem="91b-uF-DB1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XHg-Ey-RfZ"/>
+                            <constraint firstItem="rfv-PI-RYS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eBR-s8-tCD"/>
+                            <constraint firstItem="WF0-jS-eeb" firstAttribute="top" secondItem="91b-uF-DB1" secondAttribute="bottom" constant="25" id="j5P-EI-NZc"/>
+                            <constraint firstItem="WF0-jS-eeb" firstAttribute="centerX" secondItem="91b-uF-DB1" secondAttribute="centerX" id="kyW-vm-hjV"/>
+                            <constraint firstItem="rfv-PI-RYS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lA6-5h-ruQ"/>
+                            <constraint firstItem="oxD-Pu-4Z9" firstAttribute="top" secondItem="WF0-jS-eeb" secondAttribute="bottom" constant="25" id="quk-MO-O8H"/>
+                            <constraint firstItem="rfv-PI-RYS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w4S-et-qy9"/>
+>>>>>>> e819c9a1a5deb74dd7407ac273a82d7117d649e3
                         </constraints>
                     </view>
                 </viewController>
