@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c2Z-NS-hIx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Ll-5s-Rqc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--OpeningPage-->
         <scene sceneID="cbD-pI-f9B">
             <objects>
-                <viewController id="c2Z-NS-hIx" sceneMemberID="viewController">
+                <viewController id="c2Z-NS-hIx" userLabel="OpeningPage" customClass="OpeningPage" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u28-Rv-CXD"/>
                         <viewControllerLayoutGuide type="bottom" id="enC-47-cby"/>
@@ -180,10 +180,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="0QQ-3J-yDX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8H-tk-gwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="211.5"/>
+            <point key="canvasLocation" x="1167" y="211.5"/>
         </scene>
         <!--LogIn-->
         <scene sceneID="Q81-bt-ioZ">
@@ -202,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nan-6Q-okt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2133" y="14.25"/>
+            <point key="canvasLocation" x="3051" y="14.25"/>
         </scene>
         <!--SignUp-->
         <scene sceneID="ooK-Rb-m3E">
@@ -220,7 +221,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="3iF-pT-3Kf">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="44"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="100" id="lNl-DW-Dvd">
                                         <variation key="heightClass=regular-widthClass=compact" constant="300"/>
@@ -238,8 +239,7 @@
                                         <exclude reference="lNl-DW-Dvd"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="50" y="104" width="300" height="50"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="3iF-pT-3Kf"/>
                                         <include reference="lNl-DW-Dvd"/>
@@ -388,7 +388,7 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="V1Y-Pf-V3O">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="A08-57-Tbh">
                             <connections>
-                                <segue destination="c2Z-NS-hIx" kind="show" id="Xo3-n8-FKs"/>
+                                <segue destination="1Ll-5s-Rqc" kind="show" id="Xo3-n8-FKs"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="BhX-kj-EHU">
@@ -401,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfO-qb-Kg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="804.75"/>
+            <point key="canvasLocation" x="2844" y="804.75"/>
         </scene>
         <!--SignUp2-->
         <scene sceneID="fkK-Gk-4iH">
@@ -598,7 +598,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpO-0e-c3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2643" y="804.75"/>
+            <point key="canvasLocation" x="3561" y="804.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="469-x1-wv7">
@@ -636,7 +636,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgh-Vi-Fer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3519" y="460.5"/>
+            <point key="canvasLocation" x="4437" y="460.5"/>
         </scene>
         <!--Log In-->
         <scene sceneID="XPQ-YW-flw">
@@ -654,7 +654,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je5-LM-WPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="14.25"/>
+            <point key="canvasLocation" x="2133" y="14.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HqY-W9-VC6">
@@ -672,7 +672,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ux-ng-bQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006.5" y="780.75"/>
+            <point key="canvasLocation" x="1924.5" y="780.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HAo-4v-tgs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1Ll-5s-Rqc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xCw-Ey-oas">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c2Z-NS-hIx" kind="relationship" relationship="rootViewController" id="M6O-Jp-XF1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qp-XW-nmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="211.5"/>
         </scene>
     </scenes>
     <resources>
