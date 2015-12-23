@@ -90,7 +90,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="I5N-Lw-Ss1" kind="show" id="N0C-AB-k5v"/>
+                                    <segue destination="5EO-MG-fxA" kind="presentation" id="1q5-cF-wvA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCn-gW-9b7" userLabel="logIn ">
@@ -194,6 +194,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YtY-Sx-LcA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jIJ-ho-h4z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -212,14 +213,169 @@
                         <viewControllerLayoutGuide type="bottom" id="46y-ri-TZH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h7J-Ow-Die">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="School" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-FU-gef">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3iF-pT-3Kf">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="lNl-DW-Dvd">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="275"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3iF-pT-3Kf"/>
+                                        <exclude reference="lNl-DW-Dvd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3iF-pT-3Kf"/>
+                                        <include reference="lNl-DW-Dvd"/>
+                                    </mask>
+                                </variation>
+                            </searchBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="VcD-h2-5uJ">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4ky-bp-XrF">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="psQ-xT-zyU">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="275"/>
+                                    </constraint>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4ky-bp-XrF"/>
+                                        <exclude reference="psQ-xT-zyU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <mask key="constraints">
+                                        <include reference="4ky-bp-XrF"/>
+                                        <include reference="psQ-xT-zyU"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="BXI-mS-Sef">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="EaC-RG-aKw">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="275"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="QaC-XA-cu6">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QaC-XA-cu6"/>
+                                        <exclude reference="EaC-RG-aKw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <mask key="constraints">
+                                        <include reference="QaC-XA-cu6"/>
+                                        <include reference="EaC-RG-aKw"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student ID" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="aug-uB-fFY">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="m4Y-FI-8Ya">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="uho-iB-aXr">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="275"/>
+                                    </constraint>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="m4Y-FI-8Ya"/>
+                                        <exclude reference="uho-iB-aXr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <mask key="constraints">
+                                        <include reference="m4Y-FI-8Ya"/>
+                                        <include reference="uho-iB-aXr"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VcD-h2-5uJ" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="1qN-GM-E6G"/>
+                            <constraint firstItem="BCW-FU-gef" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="8Eh-Az-VzB"/>
+                            <constraint firstItem="aug-uB-fFY" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="9bD-zI-Dnl"/>
+                            <constraint firstItem="aug-uB-fFY" firstAttribute="top" secondItem="BXI-mS-Sef" secondAttribute="bottom" constant="15" id="aU9-Ig-evO"/>
+                            <constraint firstItem="BXI-mS-Sef" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="dsN-6s-uor"/>
+                            <constraint firstItem="BXI-mS-Sef" firstAttribute="top" secondItem="BCW-FU-gef" secondAttribute="bottom" constant="58" id="neB-tT-cEf"/>
+                            <constraint firstItem="BCW-FU-gef" firstAttribute="top" secondItem="5Xc-Fa-fop" secondAttribute="bottom" constant="107" id="rId-19-Ftc"/>
+                            <constraint firstItem="VcD-h2-5uJ" firstAttribute="top" secondItem="BCW-FU-gef" secondAttribute="bottom" constant="15" id="vGo-MP-qdJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BCW-FU-gef"/>
+                                <exclude reference="VcD-h2-5uJ"/>
+                                <exclude reference="BXI-mS-Sef"/>
+                                <exclude reference="aug-uB-fFY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Eh-Az-VzB"/>
+                                <exclude reference="rId-19-Ftc"/>
+                                <exclude reference="1qN-GM-E6G"/>
+                                <exclude reference="vGo-MP-qdJ"/>
+                                <exclude reference="dsN-6s-uor"/>
+                                <exclude reference="neB-tT-cEf"/>
+                                <exclude reference="9bD-zI-Dnl"/>
+                                <exclude reference="aU9-Ig-evO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BCW-FU-gef"/>
+                                <include reference="VcD-h2-5uJ"/>
+                                <include reference="BXI-mS-Sef"/>
+                                <include reference="aug-uB-fFY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8Eh-Az-VzB"/>
+                                <include reference="rId-19-Ftc"/>
+                                <include reference="1qN-GM-E6G"/>
+                                <include reference="vGo-MP-qdJ"/>
+                                <include reference="dsN-6s-uor"/>
+                                <include reference="neB-tT-cEf"/>
+                                <include reference="9bD-zI-Dnl"/>
+                                <include reference="aU9-Ig-evO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="zCb-ar-iMN">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Pd2-bJ-rKT">
+                    <navigationItem key="navigationItem" title="Sign Up" id="V1Y-Pf-V3O">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="A08-57-Tbh">
                             <connections>
-                                <segue destination="c2Z-NS-hIx" kind="show" id="fMZ-Tp-0al"/>
+                                <segue destination="c2Z-NS-hIx" kind="show" id="Xo3-n8-FKs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -227,25 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfO-qb-Kg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="967.5"/>
-        </scene>
-        <!--Sign Up-->
-        <scene sceneID="jm9-GK-B6J">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I5N-Lw-Ss1" userLabel="Sign Up" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gvx-rf-k66">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7dl-6m-eKg" kind="relationship" relationship="rootViewController" id="EjN-Ol-Wj8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Oy-0j-hzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1005" y="967.5"/>
+            <point key="canvasLocation" x="1680" y="780.75"/>
         </scene>
         <!--Log In-->
         <scene sceneID="XPQ-YW-flw">
@@ -264,6 +402,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je5-LM-WPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1215" y="14.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HqY-W9-VC6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5EO-MG-fxA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lq8-9U-1MY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7dl-6m-eKg" kind="relationship" relationship="rootViewController" id="D2D-47-OGJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ux-ng-bQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006.5" y="780.75"/>
         </scene>
     </scenes>
     <resources>
