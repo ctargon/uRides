@@ -20,7 +20,8 @@ class Emailvalidation: UIViewController {
     
     // MARK: Actions
     @IBAction func validateEmail(sender: AnyObject) {
-        let email = sender as? String
+        //let email = sender as? String
+        let email = emailTextField.text 
         
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         
