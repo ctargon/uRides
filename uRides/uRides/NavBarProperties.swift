@@ -1,5 +1,5 @@
 //
-//  OpeningPage.swift
+//  NavBarProperties.swift
 //  uRides
 //
 //  Created by Colin Targonski on 12/23/15.
@@ -7,10 +7,13 @@
 //
 
 import Foundation
-
 import UIKit
 
-class OpeningPage: UIViewController {
-
+class NavBarProperties: UIView {
     
+    // Mark: Properties
+    
+    
+    
+    // Mark: Actions
 }

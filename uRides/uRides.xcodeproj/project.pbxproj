@@ -17,6 +17,7 @@
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
+		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uRidesUITests.swift; sourceTree = "<group>"; };
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
+		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DF7B14291C2894F900DDE87E /* AppDelegate.swift */,
 				DF7B142B1C2894F900DDE87E /* ViewController.swift */,
 				DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */,
+				DFF476621C2B510000A39059 /* StudentCheck.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
 				DF7B14321C2894F900DDE87E /* uRides.xcdatamodeld in Sources */,

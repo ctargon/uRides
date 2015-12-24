@@ -208,7 +208,7 @@
         <!--SignUp-->
         <scene sceneID="ooK-Rb-m3E">
             <objects>
-                <viewController id="7dl-6m-eKg" userLabel="SignUp" sceneMemberID="viewController">
+                <viewController id="7dl-6m-eKg" userLabel="SignUp" customClass="StudentCheck" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Xc-Fa-fop"/>
                         <viewControllerLayoutGuide type="bottom" id="46y-ri-TZH"/>
@@ -217,35 +217,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="School" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-FU-gef">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="3iF-pT-3Kf">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="44"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" constant="100" id="lNl-DW-Dvd">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="300"/>
-                                    </constraint>
-                                </constraints>
-                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="3iF-pT-3Kf"/>
-                                        <exclude reference="lNl-DW-Dvd"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="3iF-pT-3Kf"/>
-                                        <include reference="lNl-DW-Dvd"/>
-                                    </mask>
-                                </variation>
-                            </searchBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="VcD-h2-5uJ">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
@@ -327,6 +298,35 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <searchBar contentMode="redraw" placeholder="School" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-FU-gef">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3iF-pT-3Kf">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="44"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="lNl-DW-Dvd">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3iF-pT-3Kf"/>
+                                        <exclude reference="lNl-DW-Dvd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3iF-pT-3Kf"/>
+                                        <include reference="lNl-DW-Dvd"/>
+                                    </mask>
+                                </variation>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -349,10 +349,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="BCW-FU-gef"/>
                                 <exclude reference="VcD-h2-5uJ"/>
                                 <exclude reference="Ffc-a5-SVw"/>
                                 <exclude reference="uVF-LY-BSb"/>
+                                <exclude reference="BCW-FU-gef"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="BJR-dK-h3L"/>
@@ -367,10 +367,10 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="BCW-FU-gef"/>
                                 <include reference="VcD-h2-5uJ"/>
                                 <include reference="Ffc-a5-SVw"/>
                                 <include reference="uVF-LY-BSb"/>
+                                <include reference="BCW-FU-gef"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="BJR-dK-h3L"/>
@@ -398,10 +398,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="NavBar" destination="V1Y-Pf-V3O" id="dMN-i1-YAR"/>
+                        <outlet property="backButton" destination="A08-57-Tbh" id="QCk-hH-Mj3"/>
+                        <outlet property="firstNameTextBar" destination="VcD-h2-5uJ" id="Q0a-e4-V70"/>
+                        <outlet property="lastNameTextBar" destination="Ffc-a5-SVw" id="N4v-53-aOT"/>
+                        <outlet property="navBar" destination="V1Y-Pf-V3O" id="iHZ-zt-1Na"/>
+                        <outlet property="nextButton" destination="BhX-kj-EHU" id="q8S-s7-wnV"/>
+                        <outlet property="schoolSearchBar" destination="BCW-FU-gef" id="tc2-Ws-XS8"/>
+                        <outlet property="studentIdTextBar" destination="uVF-LY-BSb" id="rqe-5d-0IG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfO-qb-Kg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2844" y="804.75"/>
+            <point key="canvasLocation" x="2721" y="834"/>
         </scene>
         <!--SignUp2-->
         <scene sceneID="fkK-Gk-4iH">
