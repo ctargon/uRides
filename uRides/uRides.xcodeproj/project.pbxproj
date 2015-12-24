@@ -10,6 +10,7 @@
 		DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04141C28B193005E0A4C /* Images.xcassets */; };
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
+		DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */; };
 		DF7B142A1C2894F900DDE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14291C2894F900DDE87E /* AppDelegate.swift */; };
 		DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B142B1C2894F900DDE87E /* ViewController.swift */; };
 		DF7B14321C2894F900DDE87E /* uRides.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14301C2894F900DDE87E /* uRides.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 		DAFE04141C28B193005E0A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loadScreen.storyboard; sourceTree = "<group>"; };
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		DF7B14261C2894F900DDE87E /* uRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B14291C2894F900DDE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF7B142B1C2894F900DDE87E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */,
 				DFF476621C2B510000A39059 /* StudentCheck.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
+				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
 				DF7B14381C2894F900DDE87E /* Info.plist */,
@@ -272,6 +275,7 @@
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
+				DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */,
 				DF7B14321C2894F900DDE87E /* uRides.xcdatamodeld in Sources */,
 				DF7B142A1C2894F900DDE87E /* AppDelegate.swift in Sources */,
 			);
