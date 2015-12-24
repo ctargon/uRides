@@ -1,5 +1,5 @@
 //
-//  EmailValidation.swift
+//  SignInValidation.swift
 //  uRides
 //
 //  Created by Colin Targonski on 12/24/15.
@@ -9,17 +9,15 @@
 import Foundation
 import UIKit
 
-class Emailvalidation: UIViewController {
+class SignInValidation: UIViewController {
     
     // MARK: Properties
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var emailConfirmTextField: UITextField!
+    /*@IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var invalidEmailLabel: UILabel!
     
-    
-    
     // MARK: Actions
-    @IBAction func validateEmail(sender: AnyObject) {
+    @IBAction func emailValidation(sender: AnyObject) {
         //let email = sender as? String
         let email = emailTextField.text
         
@@ -38,11 +36,9 @@ class Emailvalidation: UIViewController {
         {
             invalidEmailLabel.hidden = true
         }
-        
-    }
-
-    @IBAction func validEmail(sender: AnyObject) {
-        invalidEmailLabel.hidden = true
     }
     
+    @IBAction func emailValHelper(sender: AnyObject) {
+        invalidEmailLabel.hidden = true
+    }*/
 }
