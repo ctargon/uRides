@@ -385,13 +385,15 @@
                         </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Sign Up" id="V1Y-Pf-V3O">
+                    <navigationItem key="navigationItem" title="Create Account" id="V1Y-Pf-V3O">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="A08-57-Tbh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="1Ll-5s-Rqc" kind="show" id="Xo3-n8-FKs"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="BhX-kj-EHU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="Ehh-rz-8So" kind="show" id="h8j-rJ-60q"/>
                             </connections>
@@ -498,12 +500,20 @@
                                     <constraint firstAttribute="height" constant="40" id="1S4-BN-uyG">
                                         <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                                     </constraint>
-                                    <constraint firstAttribute="width" constant="150" id="BOl-R8-obe"/>
+                                    <constraint firstAttribute="width" constant="150" id="BOl-R8-obe">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="175"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Complete">
+                                <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="1S4-BN-uyG"/>
@@ -605,6 +615,20 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Create Account" id="zRO-nG-vrr">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="BrK-ea-iTe">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="5EO-MG-fxA" kind="show" id="MRO-g1-g58"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="lJw-7N-cQc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="1Ll-5s-Rqc" kind="show" id="Jij-WG-MFZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpO-0e-c3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -706,4 +730,8 @@
     <resources>
         <image name="Logo" width="834" height="464"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MRO-g1-g58"/>
+        <segue reference="Jij-WG-MFZ"/>
+    </inferredMetricsTieBreakers>
 </document>

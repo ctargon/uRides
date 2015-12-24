@@ -17,13 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        //let navigationBarAppearace = UINavigationBar.appearance()
+        let navigationBarAppearace = UINavigationBar.appearance()
         
-        //navigationBarAppearace.tintColor = UIColor.blackColor()
+        navigationBarAppearace.backgroundColor = UIColor.blackColor()
         
-        //navigationBarAppearace.barTintColor =
+        navigationBarAppearace.barTintColor = UIColor.blackColor()
         
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
+        //navigationBarAppearace.titleTextAttributes = [NSFontAttributeName: [UIFont .boldSystemFontOfSize(16.0f)]]
+        
+
         return true
     }
 
