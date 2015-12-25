@@ -1,0 +1,6 @@
+framework module PaymentKit {
+  umbrella header "PaymentKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC5F2BEECA323A541B3BBB8D /* Pods_uRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */; };
 		DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04141C28B193005E0A4C /* Images.xcassets */; };
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
@@ -41,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uRides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		283D3535B4BE929ACE7F0468 /* Pods-uRides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.debug.xcconfig"; sourceTree = "<group>"; };
+		2F45D40EC5B47193F24C62A4 /* Pods-uRides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.release.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.release.xcconfig"; sourceTree = "<group>"; };
 		DAFE04141C28B193005E0A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loadScreen.storyboard; sourceTree = "<group>"; };
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE8ED6B1C2DB25800E468A4 /* Stripe.framework in Frameworks */,
+				BC5F2BEECA323A541B3BBB8D /* Pods_uRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CB758450DB2BB66A64C5488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				283D3535B4BE929ACE7F0468 /* Pods-uRides.debug.xcconfig */,
+				2F45D40EC5B47193F24C62A4 /* Pods-uRides.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4ECC944E9000CAFA789C05D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF7B141D1C2894F900DDE87E = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +118,8 @@
 				DF7B14401C2894F900DDE87E /* uRidesTests */,
 				DF7B144B1C2894F900DDE87E /* uRidesUITests */,
 				DF7B14271C2894F900DDE87E /* Products */,
+				4CB758450DB2BB66A64C5488 /* Pods */,
+				4ECC944E9000CAFA789C05D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF7B14511C2894F900DDE87E /* Build configuration list for PBXNativeTarget "uRides" */;
 			buildPhases = (
+				0FF71F1A4748B859C8F5FF25 /* Check Pods Manifest.lock */,
 				DF7B14221C2894F900DDE87E /* Sources */,
 				DF7B14231C2894F900DDE87E /* Frameworks */,
 				DF7B14241C2894F900DDE87E /* Resources */,
+				C90DBF75F734DBB336F5E77F /* Embed Pods Frameworks */,
+				33A887220E200814896A32D0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FF71F1A4748B859C8F5FF25 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33A887220E200814896A32D0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uRides/Pods-uRides-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90DBF75F734DBB336F5E77F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uRides/Pods-uRides-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF7B14221C2894F900DDE87E /* Sources */ = {
@@ -406,6 +481,7 @@
 		};
 		DF7B14521C2894F900DDE87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283D3535B4BE929ACE7F0468 /* Pods-uRides.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -421,6 +497,7 @@
 		};
 		DF7B14531C2894F900DDE87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F45D40EC5B47193F24C62A4 /* Pods-uRides.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
