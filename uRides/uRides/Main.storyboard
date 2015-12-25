@@ -910,22 +910,22 @@
                                 <exclude reference="FaS-eL-d1J"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Eu1-fX-vBN"/>
-                                <exclude reference="Ww7-Yc-ygH"/>
-                                <exclude reference="Gk5-ky-2K7"/>
-                                <exclude reference="ypb-O8-mwE"/>
                                 <exclude reference="USQ-uL-Q5p"/>
                                 <exclude reference="xai-Z9-2m6"/>
-                                <exclude reference="91G-Ep-o4z"/>
-                                <exclude reference="RyY-Zu-alQ"/>
                                 <exclude reference="B9Y-Rv-WjH"/>
                                 <exclude reference="nq6-fL-nqN"/>
+                                <exclude reference="Eu1-fX-vBN"/>
+                                <exclude reference="Ww7-Yc-ygH"/>
                                 <exclude reference="by7-o8-cYR"/>
                                 <exclude reference="hgf-tI-knl"/>
                                 <exclude reference="1VK-Yt-t2u"/>
                                 <exclude reference="dHk-It-vq9"/>
+                                <exclude reference="91G-Ep-o4z"/>
+                                <exclude reference="RyY-Zu-alQ"/>
                                 <exclude reference="N9V-lm-arR"/>
                                 <exclude reference="vl8-z2-YYK"/>
+                                <exclude reference="Gk5-ky-2K7"/>
+                                <exclude reference="ypb-O8-mwE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -940,22 +940,22 @@
                                 <include reference="FaS-eL-d1J"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Eu1-fX-vBN"/>
-                                <include reference="Ww7-Yc-ygH"/>
-                                <include reference="Gk5-ky-2K7"/>
-                                <include reference="ypb-O8-mwE"/>
                                 <include reference="USQ-uL-Q5p"/>
                                 <include reference="xai-Z9-2m6"/>
-                                <include reference="91G-Ep-o4z"/>
-                                <include reference="RyY-Zu-alQ"/>
                                 <include reference="B9Y-Rv-WjH"/>
                                 <include reference="nq6-fL-nqN"/>
+                                <include reference="Eu1-fX-vBN"/>
+                                <include reference="Ww7-Yc-ygH"/>
                                 <include reference="by7-o8-cYR"/>
                                 <include reference="hgf-tI-knl"/>
                                 <include reference="1VK-Yt-t2u"/>
                                 <include reference="dHk-It-vq9"/>
+                                <include reference="91G-Ep-o4z"/>
+                                <include reference="RyY-Zu-alQ"/>
                                 <include reference="N9V-lm-arR"/>
                                 <include reference="vl8-z2-YYK"/>
+                                <include reference="Gk5-ky-2K7"/>
+                                <include reference="ypb-O8-mwE"/>
                             </mask>
                         </variation>
                     </view>

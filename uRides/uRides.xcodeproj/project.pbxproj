@@ -19,6 +19,7 @@
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
+		DFE8ED6B1C2DB25800E468A4 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE8ED6A1C2DB25800E468A4 /* Stripe.framework */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uRidesUITests.swift; sourceTree = "<group>"; };
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
+		DFE8ED6A1C2DB25800E468A4 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = ../Stripe.framework; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE8ED6B1C2DB25800E468A4 /* Stripe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +119,7 @@
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
+				DFE8ED6A1C2DB25800E468A4 /* Stripe.framework */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
 				DF7B14381C2894F900DDE87E /* Info.plist */,
@@ -404,6 +408,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = uRides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uRides-Corporation.uRides";
@@ -415,6 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = uRides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uRides-Corporation.uRides";
