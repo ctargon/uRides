@@ -33,7 +33,4 @@ Launch screen -> finished up launch screen on 12/21. Need to check constraint bo
                  correct for every iPhone size. Also, find attributes that will ensure the application is only allowed
                  to go in portrait mode.
 
-Sign up/Log in-> This is the next page to be completed on the story board. CHECK
-
-now working on input validation and beginning next steps to clean up the storyboard to prevent cluttering 
-as well as working on the main interface
+Sign up/Log in-> This is the next page to be completed on the story board. 
