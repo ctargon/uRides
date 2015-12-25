@@ -189,7 +189,7 @@
         <!--LogIn-->
         <scene sceneID="5ca-v9-p7i">
             <objects>
-                <viewController id="mVU-PZ-VWT" userLabel="LogIn" sceneMemberID="viewController">
+                <viewController id="mVU-PZ-VWT" userLabel="LogIn" customClass="LogInView" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dUJ-SY-tlT"/>
                         <viewControllerLayoutGuide type="bottom" id="xMg-Q5-Nww"/>
@@ -221,6 +221,10 @@
                                         <include reference="xym-Km-5p6"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="emailCheck2:" destination="mVU-PZ-VWT" eventType="editingDidBegin" id="c4a-4e-44e"/>
+                                    <action selector="emailValidCheck:" destination="mVU-PZ-VWT" eventType="editingDidEnd" id="GCv-RL-yxO"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sW0-S4-5AO">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -285,6 +289,26 @@
                                     <segue destination="KJd-MM-koy" kind="show" id="i3Q-Pj-sSX"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Invalid Email Address*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSC-QU-pMX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="bfq-Sn-iKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.22549032729999999" blue="0.19110267240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bfq-Sn-iKP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="50" y="135" width="300" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="bfq-Sn-iKP"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -296,20 +320,27 @@
                             </constraint>
                             <constraint firstItem="LEW-Jv-3v5" firstAttribute="centerX" secondItem="Wda-dF-eOV" secondAttribute="centerX" id="RjI-qv-GHL"/>
                             <constraint firstItem="sW0-S4-5AO" firstAttribute="centerX" secondItem="Wda-dF-eOV" secondAttribute="centerX" id="ZGL-Jg-s8f"/>
-                            <constraint firstItem="sW0-S4-5AO" firstAttribute="top" secondItem="LEW-Jv-3v5" secondAttribute="bottom" constant="20" id="az0-Ms-ZKP"/>
+                            <constraint firstItem="sW0-S4-5AO" firstAttribute="top" secondItem="LEW-Jv-3v5" secondAttribute="bottom" constant="20" id="az0-Ms-ZKP">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="zSC-QU-pMX" firstAttribute="centerX" secondItem="Wda-dF-eOV" secondAttribute="centerX" id="bDU-mh-Zjn"/>
                             <constraint firstItem="fnU-mT-x13" firstAttribute="centerX" secondItem="Wda-dF-eOV" secondAttribute="centerX" id="dQp-80-3cz"/>
+                            <constraint firstItem="zSC-QU-pMX" firstAttribute="top" secondItem="LEW-Jv-3v5" secondAttribute="bottom" constant="1" id="eb1-de-34I"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="LEW-Jv-3v5"/>
                                 <exclude reference="sW0-S4-5AO"/>
                                 <exclude reference="fnU-mT-x13"/>
+                                <exclude reference="zSC-QU-pMX"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="6pS-GG-KXA"/>
                                 <exclude reference="RjI-qv-GHL"/>
                                 <exclude reference="ZGL-Jg-s8f"/>
                                 <exclude reference="az0-Ms-ZKP"/>
+                                <exclude reference="bDU-mh-Zjn"/>
+                                <exclude reference="eb1-de-34I"/>
                                 <exclude reference="MoZ-PL-uSf"/>
                                 <exclude reference="dQp-80-3cz"/>
                             </mask>
@@ -319,12 +350,15 @@
                                 <include reference="LEW-Jv-3v5"/>
                                 <include reference="sW0-S4-5AO"/>
                                 <include reference="fnU-mT-x13"/>
+                                <include reference="zSC-QU-pMX"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="6pS-GG-KXA"/>
                                 <include reference="RjI-qv-GHL"/>
                                 <include reference="ZGL-Jg-s8f"/>
                                 <include reference="az0-Ms-ZKP"/>
+                                <include reference="bDU-mh-Zjn"/>
+                                <include reference="eb1-de-34I"/>
                                 <include reference="MoZ-PL-uSf"/>
                                 <include reference="dQp-80-3cz"/>
                             </mask>
@@ -338,6 +372,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailEntryTextField" destination="LEW-Jv-3v5" id="y6p-iz-cxD"/>
+                        <outlet property="invalidMessagLabel" destination="zSC-QU-pMX" id="XNc-vU-CBE"/>
+                        <outlet property="passwordEntryField" destination="sW0-S4-5AO" id="HEG-Va-yeD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljZ-wI-wLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -352,6 +391,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OK0-To-kWu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vxw-Ub-S0q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -370,6 +410,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mtZ-0E-cLc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nen-R9-9Xq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -719,7 +760,7 @@
                                     <constraint firstAttribute="height" constant="20" id="Vx7-Gn-4Zx"/>
                                     <constraint firstAttribute="width" constant="300" id="jCI-Nb-I6J"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="0.22549032734848418" blue="0.19110267236919487" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -778,7 +819,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Gsw-q9-ypl" firstAttribute="top" secondItem="bng-un-VWt" secondAttribute="bottom" constant="30" id="1VK-Yt-t2u">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="E0Z-Mv-6et" firstAttribute="centerX" secondItem="t4a-e6-ckt" secondAttribute="centerX" id="B9Y-Rv-WjH"/>
                             <constraint firstItem="bWR-tX-BRX" firstAttribute="centerX" secondItem="t4a-e6-ckt" secondAttribute="centerX" id="Eu1-fX-vBN"/>
@@ -788,15 +829,15 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="bng-un-VWt" firstAttribute="top" secondItem="E0Z-Mv-6et" secondAttribute="bottom" constant="20" id="by7-o8-cYR">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="Gsw-q9-ypl" firstAttribute="centerX" secondItem="t4a-e6-ckt" secondAttribute="centerX" id="dHk-It-vq9"/>
                             <constraint firstItem="bng-un-VWt" firstAttribute="centerX" secondItem="t4a-e6-ckt" secondAttribute="centerX" id="hgf-tI-knl"/>
                             <constraint firstItem="E0Z-Mv-6et" firstAttribute="top" secondItem="5Ul-7O-OUS" secondAttribute="bottom" constant="20" id="nq6-fL-nqN">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="5Ul-7O-OUS" firstAttribute="top" secondItem="bWR-tX-BRX" secondAttribute="bottom" constant="200" id="xai-Z9-2m6">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="rkh-Sv-lNm" firstAttribute="top" secondItem="bWR-tX-BRX" secondAttribute="bottom" constant="1" id="ypb-O8-mwE"/>
                         </constraints>
@@ -1008,7 +1049,7 @@
         <image name="Logo" width="834" height="464"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fbD-wL-3Qs"/>
+        <segue reference="3cy-E5-tpa"/>
         <segue reference="MRO-g1-g58"/>
     </inferredMetricsTieBreakers>
 </document>
