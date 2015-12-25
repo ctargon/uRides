@@ -12,6 +12,7 @@
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
 		DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B99541C2CD3CF00E007BC /* LogInView.swift */; };
+		DF1626AF1C2DC9E5001D6036 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1626AE1C2DC9E5001D6036 /* PaymentViewController.swift */; };
 		DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */; };
 		DF7B142A1C2894F900DDE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14291C2894F900DDE87E /* AppDelegate.swift */; };
 		DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B142B1C2894F900DDE87E /* ViewController.swift */; };
@@ -20,7 +21,6 @@
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
-		DFE8ED6B1C2DB25800E468A4 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE8ED6A1C2DB25800E468A4 /* Stripe.framework */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +49,8 @@
 		DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loadScreen.storyboard; sourceTree = "<group>"; };
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF0B99541C2CD3CF00E007BC /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uRidesBridgingHeader.h; sourceTree = "<group>"; };
+		DF1626AE1C2DC9E5001D6036 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		DF7B14261C2894F900DDE87E /* uRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B14291C2894F900DDE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +65,6 @@
 		DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uRidesUITests.swift; sourceTree = "<group>"; };
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
-		DFE8ED6A1C2DB25800E468A4 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = ../Stripe.framework; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE8ED6B1C2DB25800E468A4 /* Stripe.framework in Frameworks */,
 				BC5F2BEECA323A541B3BBB8D /* Pods_uRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,12 +143,13 @@
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
-				DFE8ED6A1C2DB25800E468A4 /* Stripe.framework */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
 				DF7B14381C2894F900DDE87E /* Info.plist */,
 				DF7B14301C2894F900DDE87E /* uRides.xcdatamodeld */,
 				DAFE04141C28B193005E0A4C /* Images.xcassets */,
+				DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */,
+				DF1626AE1C2DC9E5001D6036 /* PaymentViewController.swift */,
 			);
 			path = uRides;
 			sourceTree = "<group>";
@@ -357,6 +358,7 @@
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
+				DF1626AF1C2DC9E5001D6036 /* PaymentViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
 				DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */,
 				DF7B14321C2894F900DDE87E /* uRides.xcdatamodeld in Sources */,
@@ -490,8 +492,10 @@
 				);
 				INFOPLIST_FILE = uRides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-objC";
 				PRODUCT_BUNDLE_IDENTIFIER = "uRides-Corporation.uRides";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = uRides/uRidesBridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -506,8 +510,10 @@
 				);
 				INFOPLIST_FILE = uRides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-objC";
 				PRODUCT_BUNDLE_IDENTIFIER = "uRides-Corporation.uRides";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = uRides/uRidesBridgingHeader.h;
 			};
 			name = Release;
 		};

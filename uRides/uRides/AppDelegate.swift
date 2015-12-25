@@ -25,8 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        //navigationBarAppearace.titleTextAttributes = [NSFontAttributeName: [UIFont .boldSystemFontOfSize(16.0f)]]
-        
+        //pk_test_35yTvl2PyJ6mN7k52KKkdd4r
+        //Stripe.setDefaultPublishableKey("pk_test_35yTvl2PyJ6mN7k52KKkdd4r")
 
         return true
     }
