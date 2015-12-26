@@ -89,4 +89,26 @@ class Emailvalidation: UIViewController {
         passwordErrorLabel.hidden = true
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Hide the nav bar anytime the keyboard appears
+        navigationController?.hidesBarsWhenKeyboardAppears = true
+        
+        //Creates a gesutre for swiping down and adds it to gesture recognizer
+        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboardSwipeDown")
+        swipe.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipe)
+    }
+    
+    //Uses the added gesutrue of swipe down in order to close keyboard and then makes nav bar reappear
+    func dismissKeyboardSwipeDown() {
+        self.emailTextField.resignFirstResponder()
+        self.emailConfirmTextField.resignFirstResponder()
+        self.passwordTextField.resignFirstResponder()
+        self.confirmPasswordTextField.resignFirstResponder()
+        
+        self.navigationController?.navigationBarHidden = false
+    }
+    
 }
