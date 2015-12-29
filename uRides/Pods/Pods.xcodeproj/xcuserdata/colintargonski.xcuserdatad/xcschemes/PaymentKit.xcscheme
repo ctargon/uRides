@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AF2D1F00A8DE9A97396B5BA7'
+               BlueprintIdentifier = 'BA08F63CDF0B8E12240F0AEC'
                BlueprintName = 'PaymentKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PaymentKit.framework'>

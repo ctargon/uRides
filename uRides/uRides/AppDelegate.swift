@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         //pk_test_35yTvl2PyJ6mN7k52KKkdd4r
-        //Stripe.setDefaultPublishableKey("pk_test_35yTvl2PyJ6mN7k52KKkdd4r")
+        Stripe.setDefaultPublishableKey("pk_test_35yTvl2PyJ6mN7k52KKkdd4r")
 
         return true
     }

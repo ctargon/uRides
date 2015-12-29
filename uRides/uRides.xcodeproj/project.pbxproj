@@ -12,7 +12,6 @@
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
 		DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B99541C2CD3CF00E007BC /* LogInView.swift */; };
-		DF1626AF1C2DC9E5001D6036 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1626AE1C2DC9E5001D6036 /* PaymentViewController.swift */; };
 		DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */; };
 		DF7B142A1C2894F900DDE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14291C2894F900DDE87E /* AppDelegate.swift */; };
 		DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B142B1C2894F900DDE87E /* ViewController.swift */; };
@@ -20,6 +19,7 @@
 		DF7B14341C2894F900DDE87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7B14331C2894F900DDE87E /* Assets.xcassets */; };
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
+		DF83DFA31C33059900F6A36E /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83DFA21C33059900F6A36E /* PaymentViewController.swift */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uRides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; includeInIndex = 0; path = Pods_uRides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		283D3535B4BE929ACE7F0468 /* Pods-uRides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.debug.xcconfig"; sourceTree = "<group>"; };
 		2F45D40EC5B47193F24C62A4 /* Pods-uRides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.release.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.release.xcconfig"; sourceTree = "<group>"; };
 		DAFE04141C28B193005E0A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -50,7 +50,6 @@
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF0B99541C2CD3CF00E007BC /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uRidesBridgingHeader.h; sourceTree = "<group>"; };
-		DF1626AE1C2DC9E5001D6036 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		DF7B14261C2894F900DDE87E /* uRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B14291C2894F900DDE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		DF7B14481C2894F900DDE87E /* uRidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uRidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uRidesUITests.swift; sourceTree = "<group>"; };
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF83DFA21C33059900F6A36E /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +142,7 @@
 				DFF476621C2B510000A39059 /* StudentCheck.swift */,
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
+				DF83DFA21C33059900F6A36E /* PaymentViewController.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
@@ -149,7 +150,6 @@
 				DF7B14301C2894F900DDE87E /* uRides.xcdatamodeld */,
 				DAFE04141C28B193005E0A4C /* Images.xcassets */,
 				DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */,
-				DF1626AE1C2DC9E5001D6036 /* PaymentViewController.swift */,
 			);
 			path = uRides;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
-				DF1626AF1C2DC9E5001D6036 /* PaymentViewController.swift in Sources */,
+				DF83DFA31C33059900F6A36E /* PaymentViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
 				DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */,
 				DF7B14321C2894F900DDE87E /* uRides.xcdatamodeld in Sources */,
