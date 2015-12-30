@@ -409,7 +409,54 @@
                     <view key="view" contentMode="scaleToFill" id="Nen-R9-9Xq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-Ea-FA2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="700" id="C8q-s2-m4h">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="650"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="300" id="PJB-m6-Sce">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="350"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C8q-s2-m4h"/>
+                                        <exclude reference="PJB-m6-Sce"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="C8q-s2-m4h"/>
+                                        <include reference="PJB-m6-Sce"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MM0-Ea-FA2" firstAttribute="centerX" secondItem="Nen-R9-9Xq" secondAttribute="centerX" id="67Y-Zw-C60"/>
+                            <constraint firstItem="MM0-Ea-FA2" firstAttribute="centerY" secondItem="Nen-R9-9Xq" secondAttribute="centerY" id="Q4r-Vg-LCZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MM0-Ea-FA2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="67Y-Zw-C60"/>
+                                <exclude reference="Q4r-Vg-LCZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MM0-Ea-FA2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="67Y-Zw-C60"/>
+                                <include reference="Q4r-Vg-LCZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="1wL-iA-aXn"/>
                 </viewController>

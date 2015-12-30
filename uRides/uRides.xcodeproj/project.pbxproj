@@ -20,6 +20,8 @@
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
 		DF83DFA51C33571A00F6A36E /* payViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83DFA41C33571A00F6A36E /* payViewer.m */; };
+		DF83DFA81C34686300F6A36E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF83DFA71C34686300F6A36E /* CoreLocation.framework */; };
+		DF83DFAC1C34690B00F6A36E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF83DFAB1C34690B00F6A36E /* MapKit.framework */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF83DFA41C33571A00F6A36E /* payViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payViewer.m; sourceTree = "<group>"; };
 		DF83DFA61C33579500F6A36E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF83DFA71C34686300F6A36E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DF83DFAB1C34690B00F6A36E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF83DFA81C34686300F6A36E /* CoreLocation.framework in Frameworks */,
+				DF83DFAC1C34690B00F6A36E /* MapKit.framework in Frameworks */,
 				BC5F2BEECA323A541B3BBB8D /* Pods_uRides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +113,8 @@
 		4ECC944E9000CAFA789C05D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF83DFAB1C34690B00F6A36E /* MapKit.framework */,
+				DF83DFA71C34686300F6A36E /* CoreLocation.framework */,
 				10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */,
 			);
 			name = Frameworks;
@@ -245,6 +253,11 @@
 				TargetAttributes = {
 					DF7B14251C2894F900DDE87E = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DF7B143C1C2894F900DDE87E = {
 						CreatedOnToolsVersion = 7.2;
