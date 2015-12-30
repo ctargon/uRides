@@ -20,6 +20,7 @@
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
 		DF83DFA31C33059900F6A36E /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83DFA21C33059900F6A36E /* PaymentViewController.swift */; };
+		DF83DFA51C33571A00F6A36E /* payViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83DFA41C33571A00F6A36E /* payViewer.m */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,8 @@
 		DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uRidesUITests.swift; sourceTree = "<group>"; };
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF83DFA21C33059900F6A36E /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		DF83DFA41C33571A00F6A36E /* payViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payViewer.m; sourceTree = "<group>"; };
+		DF83DFA61C33579500F6A36E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +147,8 @@
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DF83DFA21C33059900F6A36E /* PaymentViewController.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
+				DF83DFA41C33571A00F6A36E /* payViewer.m */,
+				DF83DFA61C33579500F6A36E /* ViewController.h */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
 				DF7B14381C2894F900DDE87E /* Info.plist */,
@@ -356,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
+				DF83DFA51C33571A00F6A36E /* payViewer.m in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				DF83DFA31C33059900F6A36E /* PaymentViewController.swift in Sources */,
