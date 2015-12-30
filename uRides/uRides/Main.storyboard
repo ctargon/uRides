@@ -994,12 +994,74 @@
                     <view key="view" contentMode="scaleToFill" id="xRL-zK-RUY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB9-Tj-5om">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="FKn-Ji-vAx">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="40" id="hJO-r3-6ga"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <state key="normal" title="Add Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FKn-Ji-vAx"/>
+                                        <exclude reference="hJO-r3-6ga"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="FKn-Ji-vAx"/>
+                                        <include reference="hJO-r3-6ga"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="submitCard:" destination="g2g-et-sai" eventType="touchUpInside" id="c18-5k-1Mx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AB9-Tj-5om" firstAttribute="top" secondItem="Png-lV-aE6" secondAttribute="bottom" constant="150" id="5ls-oL-00D"/>
+                            <constraint firstItem="AB9-Tj-5om" firstAttribute="centerX" secondItem="xRL-zK-RUY" secondAttribute="centerX" id="HPx-Ss-D4U"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AB9-Tj-5om"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5ls-oL-00D"/>
+                                <exclude reference="HPx-Ss-D4U"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AB9-Tj-5om"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5ls-oL-00D"/>
+                                <include reference="HPx-Ss-D4U"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add Credit Card" id="Z0d-uJ-2EZ">
                         <barButtonItem key="rightBarButtonItem" title="Skip" id="kza-Ub-dEY"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="submitButton" destination="AB9-Tj-5om" id="AUO-lj-fIK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgh-Vi-Fer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1102,6 +1164,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Jij-WG-MFZ"/>
-        <segue reference="1q5-cF-wvA"/>
+        <segue reference="MRO-g1-g58"/>
     </inferredMetricsTieBreakers>
 </document>

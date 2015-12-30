@@ -4,7 +4,7 @@
 @interface payViewer () <STPPaymentCardTextFieldDelegate>
 
 @property (nonatomic) STPPaymentCardTextField *paymentTextField;
-@property (nonatomic) UIButton *submitButton;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @end
 
@@ -14,7 +14,7 @@
     [super viewDidLoad];
     
     self.paymentTextField = [[STPPaymentCardTextField alloc]
-                             initWithFrame:CGRectMake(15, 100, CGRectGetWidth(self.view.frame) - 30, 44)];;
+                             initWithFrame:CGRectMake(15, 130, CGRectGetWidth(self.view.frame) - 30, 44)];;
     self.paymentTextField.delegate = self;
     [self.view addSubview:self.paymentTextField];
     
