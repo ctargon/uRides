@@ -410,7 +410,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-Ea-FA2">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-Ea-FA2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="700" id="C8q-s2-m4h">
@@ -426,8 +426,7 @@
                                         <exclude reference="PJB-m6-Sce"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="687"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="C8q-s2-m4h"/>
                                         <include reference="PJB-m6-Sce"/>
@@ -480,6 +479,7 @@
         <scene sceneID="Rko-qo-f3V">
             <objects>
                 <tabBarController id="KJd-MM-koy" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Wjo-Qk-jhv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1128,10 +1128,10 @@
             </objects>
             <point key="canvasLocation" x="5887" y="1106"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--SignUpOneNavBar-->
         <scene sceneID="HqY-W9-VC6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5EO-MG-fxA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5EO-MG-fxA" userLabel="SignUpOneNavBar" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lq8-9U-1MY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1146,10 +1146,10 @@
             </objects>
             <point key="canvasLocation" x="1920" y="1106"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--OpeningViewNavBar-->
         <scene sceneID="HAo-4v-tgs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1Ll-5s-Rqc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1Ll-5s-Rqc" userLabel="OpeningViewNavBar" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="IrS-Vd-Spj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xCw-Ey-oas">
@@ -1219,13 +1219,13 @@
             </objects>
             <point key="canvasLocation" x="3353" y="1106"/>
         </scene>
-        <!--Item 1-->
+        <!--MapNavController-->
         <scene sceneID="Y6V-Se-6el">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3wa-ZT-Wu4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3wa-ZT-Wu4" userLabel="MapNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="1wL-iA-aXn"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6S-uV-oHP">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="k6S-uV-oHP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
