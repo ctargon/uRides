@@ -24,10 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         navigationBarAppearace.barTintColor = UIColor.blackColor()
         
+        navigationBarAppearace.barStyle = .Black
+        
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         //pk_test_35yTvl2PyJ6mN7k52KKkdd4r
         Stripe.setDefaultPublishableKey("pk_test_35yTvl2PyJ6mN7k52KKkdd4r")
+        
+        UIStatusBarStyle.LightContent
 
         return true
     }
