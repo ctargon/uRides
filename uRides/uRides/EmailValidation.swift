@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Emailvalidation: UIViewController {
+class Emailvalidation: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
     @IBOutlet weak var emailTextField: UITextField!
@@ -19,8 +19,10 @@ class Emailvalidation: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var passwordErrorLabel: UILabel!
+    @IBOutlet weak var createUserButton: UIButton!
     
     // MARK: Actions
+    
     // checks for a valid email address shows message if invalid
     @IBAction func validateEmail(sender: AnyObject) {
         //let email = sender as? String
@@ -92,6 +94,11 @@ class Emailvalidation: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextField.delegate = self
+        emailConfirmTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
+        
         //Hide the nav bar anytime the keyboard appears
         navigationController?.hidesBarsWhenKeyboardAppears = true
         
@@ -111,4 +118,43 @@ class Emailvalidation: UIViewController {
         self.navigationController?.navigationBarHidden = false
     }
     
+    // enables the buttons if the text field is not empty
+    func textFieldDidEndEditing(textField: UITextField) {
+        if ((emailTextField.text?.isEmpty == false) && (emailConfirmTextField.text?.isEmpty == false) && (passwordTextField.text?.isEmpty == false) && (confirmPasswordTextField.text?.isEmpty == false))
+        {
+            if (invalidEmailLabel.hidden == true && passwordErrorLabel.hidden == true)
+            {
+                self.createUserButton.enabled = true
+            }
+        }
+        else
+        {
+            self.createUserButton.enabled = false
+        }
+    }
+    
+    // adds the users information if everything is valid
+    @IBAction func submitUserInfo(sender: AnyObject) {
+        
+        // parse entry
+        let userObject = PFObject(className: "uRidesUsers")
+        userObject["EmailVerified"] = true
+        userObject["password"] = passwordTextField.text
+        userObject["email"] = emailTextField.text
+        // test entry... needs updating. can also add first and last name here
+        userObject["studentID"] = "C111111110"
+        userObject["school"] = "Clemson"
+                    
+        userObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            if (success)
+            {
+                print("User has been saved.")
+            }
+            else
+            {
+                // something went wrong
+            }
+        }
+    
+    }
 }

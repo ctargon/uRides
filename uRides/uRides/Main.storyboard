@@ -834,6 +834,43 @@
                                     </mask>
                                 </variation>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmV-vu-dvS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="9RA-cT-v9f">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="175"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="uj8-jR-i3c">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9RA-cT-v9f"/>
+                                        <exclude reference="uj8-jR-i3c"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9RA-cT-v9f"/>
+                                        <include reference="uj8-jR-i3c"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="Qbg-bv-HAD" kind="show" id="aNC-21-2cv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -841,6 +878,7 @@
                             <constraint firstItem="uVF-LY-BSb" firstAttribute="top" secondItem="Ffc-a5-SVw" secondAttribute="bottom" constant="29" id="23S-GN-yFc">
                                 <variation key="heightClass=regular-widthClass=compact" constant="22"/>
                             </constraint>
+                            <constraint firstItem="vmV-vu-dvS" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="84b-LG-5lq"/>
                             <constraint firstItem="BCW-FU-gef" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="8Eh-Az-VzB"/>
                             <constraint firstItem="Ffc-a5-SVw" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="BJR-dK-h3L"/>
                             <constraint firstItem="Ffc-a5-SVw" firstAttribute="top" secondItem="VcD-h2-5uJ" secondAttribute="bottom" constant="25" id="Gvl-rS-5LN">
@@ -850,6 +888,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="uVF-LY-BSb" firstAttribute="centerX" secondItem="h7J-Ow-Die" secondAttribute="centerX" id="adP-nx-nAb"/>
+                            <constraint firstItem="vmV-vu-dvS" firstAttribute="top" secondItem="uVF-LY-BSb" secondAttribute="bottom" constant="46" id="tuj-OL-M5K">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="VcD-h2-5uJ" firstAttribute="top" secondItem="BCW-FU-gef" secondAttribute="bottom" constant="15" id="vGo-MP-qdJ">
                                 <variation key="heightClass=regular-widthClass=compact" constant="22"/>
                             </constraint>
@@ -860,6 +901,7 @@
                                 <exclude reference="Ffc-a5-SVw"/>
                                 <exclude reference="VcD-h2-5uJ"/>
                                 <exclude reference="BCW-FU-gef"/>
+                                <exclude reference="vmV-vu-dvS"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="BJR-dK-h3L"/>
@@ -868,6 +910,8 @@
                                 <exclude reference="vGo-MP-qdJ"/>
                                 <exclude reference="23S-GN-yFc"/>
                                 <exclude reference="adP-nx-nAb"/>
+                                <exclude reference="84b-LG-5lq"/>
+                                <exclude reference="tuj-OL-M5K"/>
                                 <exclude reference="8Eh-Az-VzB"/>
                             </mask>
                         </variation>
@@ -877,6 +921,7 @@
                                 <include reference="Ffc-a5-SVw"/>
                                 <include reference="VcD-h2-5uJ"/>
                                 <include reference="BCW-FU-gef"/>
+                                <include reference="vmV-vu-dvS"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="BJR-dK-h3L"/>
@@ -885,6 +930,8 @@
                                 <include reference="vGo-MP-qdJ"/>
                                 <include reference="23S-GN-yFc"/>
                                 <include reference="adP-nx-nAb"/>
+                                <include reference="84b-LG-5lq"/>
+                                <include reference="tuj-OL-M5K"/>
                                 <include reference="8Eh-Az-VzB"/>
                             </mask>
                         </variation>
@@ -896,12 +943,6 @@
                                 <segue destination="1Ll-5s-Rqc" kind="showDetail" id="3cy-E5-tpa"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="BhX-kj-EHU">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="Qbg-bv-HAD" kind="show" id="h8j-rJ-60q"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -910,7 +951,6 @@
                         <outlet property="firstNameTextBar" destination="VcD-h2-5uJ" id="Q0a-e4-V70"/>
                         <outlet property="lastNameTextBar" destination="Ffc-a5-SVw" id="N4v-53-aOT"/>
                         <outlet property="navBar" destination="V1Y-Pf-V3O" id="iHZ-zt-1Na"/>
-                        <outlet property="nextButton" destination="BhX-kj-EHU" id="q8S-s7-wnV"/>
                         <outlet property="schoolSearchBar" destination="BCW-FU-gef" id="tc2-Ws-XS8"/>
                         <outlet property="studentIdTextBar" destination="uVF-LY-BSb" id="rqe-5d-0IG"/>
                     </connections>
@@ -1059,7 +1099,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-q9-ypl">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsw-q9-ypl">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1093,6 +1133,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="submitUserInfo:" destination="Ehh-rz-8So" eventType="touchUpInside" id="8Eo-cR-eQz"/>
                                     <segue destination="Zqc-Ec-xTP" kind="show" id="lXe-hz-IJZ"/>
                                 </connections>
                             </button>
@@ -1247,6 +1288,7 @@
                     <connections>
                         <outlet property="confirmEmailErrorLabel" destination="BOd-fT-Dtk" id="sG5-PT-axy"/>
                         <outlet property="confirmPasswordTextField" destination="bng-un-VWt" id="ij5-aI-JQB"/>
+                        <outlet property="createUserButton" destination="Gsw-q9-ypl" id="6A7-XO-SIz"/>
                         <outlet property="emailConfirmTextField" destination="5Ul-7O-OUS" id="eRD-f8-ILs"/>
                         <outlet property="emailTextField" destination="bWR-tX-BRX" id="CmB-x9-ShN"/>
                         <outlet property="invalidEmailLabel" destination="rkh-Sv-lNm" id="aV0-1l-xt2"/>
@@ -1297,7 +1339,8 @@
                                         <exclude reference="hJO-r3-6ga"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="225" y="145" width="150" height="40"/>
                                     <mask key="constraints">
                                         <include reference="FKn-Ji-vAx"/>
                                         <include reference="hJO-r3-6ga"/>
