@@ -11,6 +11,4 @@ import Foundation
 import UIKit
 
 class OpeningPage: UIViewController {
-
-    
 }
