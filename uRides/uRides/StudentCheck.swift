@@ -26,6 +26,13 @@ class StudentCheck: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // parse test
+        let testObject = PFObject(className: "TestObject")
+        testObject["driver"] = "me!!!"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            print("Object has been saved.")
+        }
+        
         //Hide the nav bar anytime the keyboard appears
         navigationController?.hidesBarsWhenKeyboardAppears = true
       

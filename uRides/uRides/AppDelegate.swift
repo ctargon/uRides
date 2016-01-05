@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import Stripe
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +34,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Stripe.setDefaultPublishableKey("pk_test_35yTvl2PyJ6mN7k52KKkdd4r")
         
         UIStatusBarStyle.LightContent
+        
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId("Ml4EuOE3u7ULVfuuCDOslw4QsFAWKxUDB8NMdlMi", clientKey: "rGsYhMwhsc7u74Gs9UmnD7E2io6SHW3U4IYUns3g")
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
 
         return true
     }

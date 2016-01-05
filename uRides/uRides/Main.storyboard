@@ -362,8 +362,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="RmH-Zb-I3E" userLabel="Nav Bar">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Agl-Oc-eeA">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="1451985489_Left_2" id="Agl-Oc-eeA">
                             <connections>
                                 <segue destination="1Ll-5s-Rqc" kind="show" id="fbD-wL-3Qs"/>
                             </connections>
@@ -451,6 +450,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="uRides" id="rkO-TM-qzQ">
+                        <barButtonItem key="leftBarButtonItem" image="1451984833_Cog" id="30O-j0-Jjp"/>
                         <barButtonItem key="rightBarButtonItem" image="1451785522_User" id="luP-cL-dea">
                             <connections>
                                 <segue destination="cgV-X7-T3X" kind="show" id="kz4-OP-fyH"/>
@@ -743,9 +743,8 @@
                                         <exclude reference="dJ5-dx-a5X"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <rect key="frame" x="150" y="240" width="300" height="40"/>
                                     <mask key="constraints">
                                         <include reference="HkU-r1-LSr"/>
                                         <include reference="dJ5-dx-a5X"/>
@@ -771,9 +770,8 @@
                                         <exclude reference="jNQ-zX-ASR"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <rect key="frame" x="150" y="178" width="300" height="40"/>
                                     <mask key="constraints">
                                         <include reference="8aK-sI-Z1c"/>
                                         <include reference="jNQ-zX-ASR"/>
@@ -799,9 +797,8 @@
                                         <exclude reference="psQ-xT-zyU"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <rect key="frame" x="150" y="116" width="300" height="40"/>
                                     <mask key="constraints">
                                         <include reference="4ky-bp-XrF"/>
                                         <include reference="psQ-xT-zyU"/>
@@ -830,8 +827,7 @@
                                         <exclude reference="lNl-DW-Dvd"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="50" width="300" height="44"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="3iF-pT-3Kf"/>
                                         <include reference="lNl-DW-Dvd"/>
@@ -895,8 +891,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Create Account" id="V1Y-Pf-V3O">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="A08-57-Tbh">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" image="1451985489_Left_2" id="A08-57-Tbh">
                             <connections>
                                 <segue destination="1Ll-5s-Rqc" kind="showDetail" id="3cy-E5-tpa"/>
                             </connections>
@@ -951,8 +946,7 @@
                                         <exclude reference="t04-ds-MVr"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="50" width="300" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="Ucj-br-OWm"/>
                                         <include reference="t04-ds-MVr"/>
@@ -979,8 +973,7 @@
                                         <exclude reference="vFj-gc-ygy"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="112" width="300" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="I7X-23-qbC"/>
                                         <include reference="vFj-gc-ygy"/>
@@ -1006,8 +999,7 @@
                                         <exclude reference="F0v-qi-1Ni"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="174" width="300" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="1ZS-hR-ZAX"/>
                                         <include reference="F0v-qi-1Ni"/>
@@ -1029,8 +1021,7 @@
                                         <exclude reference="yoF-iN-Hah"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="236" width="300" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="XQ4-Xg-EaW"/>
                                         <include reference="yoF-iN-Hah"/>
@@ -1060,8 +1051,7 @@
                                         <exclude reference="jCI-Nb-I6J"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="91" width="300" height="20"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="BqT-Ft-tAx"/>
                                         <include reference="Vx7-Gn-4Zx"/>
@@ -1096,8 +1086,7 @@
                                         <exclude reference="BOl-R8-obe"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="213" y="298" width="175" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="1S4-BN-uyG"/>
                                         <include reference="BOl-R8-obe"/>
@@ -1122,8 +1111,7 @@
                                         <exclude reference="clv-Cq-BjY"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="153" width="300" height="21"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="aCp-41-Esj"/>
                                         <include reference="clv-Cq-BjY"/>
@@ -1145,8 +1133,7 @@
                                         <exclude reference="Qce-dw-lb8"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="277" width="300" height="21"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="7D1-DP-aZc"/>
                                         <include reference="Qce-dw-lb8"/>
@@ -1245,8 +1232,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account" id="zRO-nG-vrr">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="BrK-ea-iTe">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" image="1451985489_Left_2" id="BrK-ea-iTe">
                             <connections>
                                 <segue destination="5EO-MG-fxA" kind="show" animates="NO" id="MRO-g1-g58"/>
                             </connections>
@@ -1291,7 +1277,9 @@
                                     <constraint firstAttribute="width" constant="250" id="FKn-Ji-vAx">
                                         <variation key="heightClass=regular-widthClass=compact" constant="150"/>
                                     </constraint>
-                                    <constraint firstAttribute="height" constant="40" id="hJO-r3-6ga"/>
+                                    <constraint firstAttribute="height" constant="40" id="hJO-r3-6ga">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                 <state key="normal" title="Add Card">
@@ -1309,8 +1297,7 @@
                                         <exclude reference="hJO-r3-6ga"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="325" y="126" width="150" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="FKn-Ji-vAx"/>
                                         <include reference="hJO-r3-6ga"/>
@@ -1324,11 +1311,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AB9-Tj-5om" firstAttribute="top" secondItem="Png-lV-aE6" secondAttribute="bottom" constant="150" id="5ls-oL-00D">
-                                <variation key="heightClass=regular-widthClass=compact" constant="106"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="125"/>
                             </constraint>
                             <constraint firstItem="AB9-Tj-5om" firstAttribute="centerX" secondItem="xRL-zK-RUY" secondAttribute="centerX" id="HPx-Ss-D4U">
                                 <variation key="heightClass=regular-widthClass=compact" constant="100"/>
                             </constraint>
+                            <constraint firstItem="AB9-Tj-5om" firstAttribute="centerX" secondItem="xRL-zK-RUY" secondAttribute="centerX" id="lfP-eN-jEN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -1337,6 +1325,7 @@
                             <mask key="constraints">
                                 <exclude reference="5ls-oL-00D"/>
                                 <exclude reference="HPx-Ss-D4U"/>
+                                <exclude reference="lfP-eN-jEN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1345,7 +1334,8 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="5ls-oL-00D"/>
-                                <include reference="HPx-Ss-D4U"/>
+                                <exclude reference="HPx-Ss-D4U"/>
+                                <include reference="lfP-eN-jEN"/>
                             </mask>
                         </variation>
                     </view>
@@ -1475,10 +1465,12 @@
     </scenes>
     <resources>
         <image name="1451785522_User" width="24" height="24"/>
+        <image name="1451984833_Cog" width="24" height="24"/>
+        <image name="1451985489_Left_2" width="24" height="24"/>
         <image name="Logo" width="834" height="464"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3cy-E5-tpa"/>
+        <segue reference="Jij-WG-MFZ"/>
         <segue reference="MRO-g1-g58"/>
     </inferredMetricsTieBreakers>
 </document>
