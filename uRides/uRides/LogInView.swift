@@ -9,13 +9,15 @@
 import Foundation
 import UIKit
 
-class LogInView: UIViewController {
+class LogInView: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
     @IBOutlet weak var emailEntryTextField: UITextField!
     @IBOutlet weak var passwordEntryField: UITextField!
-    @IBOutlet weak var invalidMessagLabel: UILabel!
-    
+    @IBOutlet weak var invalidMessageLabel: UILabel!
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var invalidUserLabel: UILabel!
+   
     // MARK: Actions
     @IBAction func emailValidCheck(sender: AnyObject) {
         //let email = sender as? String
@@ -30,20 +32,23 @@ class LogInView: UIViewController {
         if (!result)
         {
             // display error message
-            invalidMessagLabel.hidden = false
+            invalidMessageLabel.hidden = false
         }
         else
         {
-            invalidMessagLabel.hidden = true
+            invalidMessageLabel.hidden = true
         }
     }
     
     @IBAction func emailCheck2(sender: AnyObject) {
-        invalidMessagLabel.hidden = true
+        invalidMessageLabel.hidden = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailEntryTextField.delegate = self
+        passwordEntryField.delegate = self
         
         //Hide the nav bar anytime the keyboard appears
         navigationController?.hidesBarsWhenKeyboardAppears = true
@@ -61,5 +66,41 @@ class LogInView: UIViewController {
     
         self.navigationController?.navigationBarHidden = false
     
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if ((emailEntryTextField.text?.isEmpty == false) && (passwordEntryField.text?.isEmpty == false))
+        {
+            if (invalidMessageLabel.hidden == true)
+            {
+                validateUser()
+            }
+        }
+        else
+        {
+            self.logInButton.enabled = false
+        }
+    }
+    
+    func validateUser() {
+        let userQuery = PFQuery(className: "uRidesUsers")
+        userQuery.whereKey("email", equalTo: emailEntryTextField.text!)
+        
+        userQuery.getFirstObjectInBackgroundWithBlock {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error != nil || object == nil {
+                print("The getFirstObject request failed.")
+            } else {
+                
+                if object!["password"].isEqual(self.passwordEntryField.text) {
+                    self.logInButton.enabled = true
+                }
+                else {
+                    self.invalidUserLabel.enabled = true
+                }
+                // The find succeeded.
+                print("Successfully retrieved the object.")
+            }
+        }
     }
 }
