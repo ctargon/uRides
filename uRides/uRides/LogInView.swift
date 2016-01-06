@@ -17,6 +17,8 @@ class LogInView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var invalidMessageLabel: UILabel!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var invalidUserLabel: UILabel!
+    
+    var failed: Bool = true
    
     // MARK: Actions
     @IBAction func emailValidCheck(sender: AnyObject) {
@@ -68,6 +70,11 @@ class LogInView: UIViewController, UITextFieldDelegate {
     
     }
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        invalidMessageLabel.hidden = true
+        invalidUserLabel.hidden = true
+    }
+    
     func textFieldDidEndEditing(textField: UITextField) {
         if ((emailEntryTextField.text?.isEmpty == false) && (passwordEntryField.text?.isEmpty == false))
         {
@@ -82,6 +89,17 @@ class LogInView: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func logInButtonPressed(sender: AnyObject) {
+        if (failed)
+        {
+            self.invalidUserLabel.hidden = false
+        }
+        else
+        {
+            self.invalidUserLabel.hidden = true
+        }
+    }
+    
     func validateUser() {
         let userQuery = PFQuery(className: "uRidesUsers")
         userQuery.whereKey("email", equalTo: emailEntryTextField.text!)
@@ -89,14 +107,18 @@ class LogInView: UIViewController, UITextFieldDelegate {
         userQuery.getFirstObjectInBackgroundWithBlock {
             (object: PFObject?, error: NSError?) -> Void in
             if error != nil || object == nil {
+                self.invalidUserLabel.hidden = false
+                self.failed = true
                 print("The getFirstObject request failed.")
             } else {
+                
+                self.failed = false
                 
                 if object!["password"].isEqual(self.passwordEntryField.text) {
                     self.logInButton.enabled = true
                 }
                 else {
-                    self.invalidUserLabel.enabled = true
+                    self.invalidUserLabel.hidden = false
                 }
                 // The find succeeded.
                 print("Successfully retrieved the object.")

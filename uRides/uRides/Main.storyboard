@@ -303,10 +303,11 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="logInButtonPressed:" destination="mVU-PZ-VWT" eventType="touchUpInside" id="myq-0L-VTn"/>
                                     <segue destination="lTg-i3-fsM" kind="show" id="jF7-F7-veb"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Email and password do not match*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USP-hq-5wb">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Email or password is incorrect*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USP-hq-5wb">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="8Wu-Pp-xVg">
@@ -366,11 +367,11 @@
                                 <exclude reference="eb1-de-34I"/>
                                 <exclude reference="ZGL-Jg-s8f"/>
                                 <exclude reference="az0-Ms-ZKP"/>
+                                <exclude reference="cCU-br-eFL"/>
+                                <exclude reference="kJW-82-SOc"/>
                                 <exclude reference="CCj-PG-xDk"/>
                                 <exclude reference="MoZ-PL-uSf"/>
                                 <exclude reference="dQp-80-3cz"/>
-                                <exclude reference="cCU-br-eFL"/>
-                                <exclude reference="kJW-82-SOc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -388,11 +389,11 @@
                                 <include reference="eb1-de-34I"/>
                                 <include reference="ZGL-Jg-s8f"/>
                                 <include reference="az0-Ms-ZKP"/>
+                                <include reference="cCU-br-eFL"/>
+                                <include reference="kJW-82-SOc"/>
                                 <include reference="CCj-PG-xDk"/>
                                 <include reference="MoZ-PL-uSf"/>
                                 <include reference="dQp-80-3cz"/>
-                                <include reference="cCU-br-eFL"/>
-                                <include reference="kJW-82-SOc"/>
                             </mask>
                         </variation>
                     </view>
