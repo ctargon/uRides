@@ -138,7 +138,6 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
         
         // parse entry
         let userObject = PFObject(className: "uRidesUsers")
-        userObject["EmailVerified"] = true
         userObject["password"] = passwordTextField.text
         userObject["email"] = emailTextField.text
         // test entry... needs updating. can also add first and last name here
