@@ -34,3 +34,7 @@ Launch screen -> finished up launch screen on 12/21. Need to check constraint bo
                  to go in portrait mode.
 
 Sign up/Log in-> This is the next page to be completed on the story board. 
+
+useful site for icons
+
+https://www.iconfinder.com/icons/722666/arrow_direction_left_previous_icon#size=24
