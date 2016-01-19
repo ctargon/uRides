@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BC5F2BEECA323A541B3BBB8D /* Pods_uRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */; };
-		DACE875D1C3F2D7400479178 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACE875C1C3F2D7400479178 /* Profile.storyboard */; };
 		DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04141C28B193005E0A4C /* Images.xcassets */; };
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
@@ -60,7 +59,6 @@
 		10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; includeInIndex = 0; path = Pods_uRides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		283D3535B4BE929ACE7F0468 /* Pods-uRides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.debug.xcconfig"; sourceTree = "<group>"; };
 		2F45D40EC5B47193F24C62A4 /* Pods-uRides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.release.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.release.xcconfig"; sourceTree = "<group>"; };
-		DACE875C1C3F2D7400479178 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		DAFE04141C28B193005E0A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loadScreen.storyboard; sourceTree = "<group>"; };
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
-				DACE875C1C3F2D7400479178 /* Profile.storyboard */,
 				DF83DFAD1C34FAAB00F6A36E /* MapViewController.swift */,
 				DF83DFA41C33571A00F6A36E /* payViewer.m */,
 				DF83DFA61C33579500F6A36E /* ViewController.h */,
@@ -350,7 +347,6 @@
 			files = (
 				DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */,
 				DF7B14341C2894F900DDE87E /* Assets.xcassets in Resources */,
-				DACE875D1C3F2D7400479178 /* Profile.storyboard in Resources */,
 				DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */,
 				DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */,
 			);
