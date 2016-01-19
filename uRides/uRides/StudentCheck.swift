@@ -42,6 +42,12 @@ class StudentCheck: UIViewController {
         self.view.addGestureRecognizer(swipe)
     }
     
+    // dismiss keyboard with return button
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
     //Uses the added gesutrue of swipe down in order to close keyboard and then makes nav bar reappear
     func dismissKeyboardSwipeDown() {
         self.schoolSearchBar.resignFirstResponder()

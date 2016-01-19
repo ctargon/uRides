@@ -91,6 +91,12 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
         passwordErrorLabel.hidden = true
     }
     
+    // dismiss keyboard with return button
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

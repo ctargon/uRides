@@ -61,6 +61,10 @@ class LogInView: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(swipe)
     }
     
+    @IBAction func userTappedBackground(sender : AnyObject) {
+        view.endEditing(true)
+    }
+    
     //Uses the added gesutrue of swipe down in order to close keyboard and then makes nav bar reappear
     func dismissKeyboardSwipeDown() {
         self.emailEntryTextField.resignFirstResponder()
@@ -68,6 +72,12 @@ class LogInView: UIViewController, UITextFieldDelegate {
     
         self.navigationController?.navigationBarHidden = false
     
+    }
+    
+    // uses return button to dismiss keyboard
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
