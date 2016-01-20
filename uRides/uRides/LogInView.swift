@@ -56,9 +56,15 @@ class LogInView: UIViewController, UITextFieldDelegate {
         navigationController?.hidesBarsWhenKeyboardAppears = true
         
         //Creates a gesutre for swiping down and adds it to gesture recognizer
-        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboardSwipeDown")
+        
+        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
         swipe.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipe)
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func userTappedBackground(sender : AnyObject) {
@@ -81,11 +87,17 @@ class LogInView: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
+        
+        //emailEntryTextField.layoutIfNeeded()
+        
         invalidMessageLabel.hidden = true
         invalidUserLabel.hidden = true
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
+        
+        //emailEntryTextField.layoutIfNeeded()
+        
         if ((emailEntryTextField.text?.isEmpty == false) && (passwordEntryField.text?.isEmpty == false))
         {
             if (invalidMessageLabel.hidden == true)
