@@ -60,11 +60,15 @@ class LogInView: UIViewController, UITextFieldDelegate {
         let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
         swipe.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipe)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
+        self.view.addGestureRecognizer(tap)
     }
     
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
+        self.navigationController?.navigationBarHidden = false
+        emailEntryTextField.layoutIfNeeded()
     }
     
     @IBAction func userTappedBackground(sender : AnyObject) {
