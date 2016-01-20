@@ -74,3 +74,7 @@ git branch -d [branchName]
 git mergetool 
 
 attempt to resolve 
+
+5.) On branch master, to commit your local changes:
+
+git push
