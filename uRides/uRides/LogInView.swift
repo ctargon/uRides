@@ -19,7 +19,27 @@ class LogInView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var invalidUserLabel: UILabel!
     
     var failed: Bool = true
-   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        emailEntryTextField.delegate = self
+        passwordEntryField.delegate = self
+        
+        //Creates a gesutre for swiping down and adds it to gesture recognizer
+        
+        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
+        swipe.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipe)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
+        self.view.addGestureRecognizer(tap)
+        
+    }
+    
+    @IBAction func emailCheck2(sender: AnyObject) {
+        invalidMessageLabel.hidden = true
+    }
+    
     // MARK: Actions
     @IBAction func emailValidCheck(sender: AnyObject) {
         //let email = sender as? String
@@ -42,33 +62,9 @@ class LogInView: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func emailCheck2(sender: AnyObject) {
-        invalidMessageLabel.hidden = true
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        emailEntryTextField.delegate = self
-        passwordEntryField.delegate = self
-        
-        //Hide the nav bar anytime the keyboard appears
-        //navigationController?.hidesBarsWhenKeyboardAppears = true
-        
-        //Creates a gesutre for swiping down and adds it to gesture recognizer
-        
-        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
-        swipe.direction = UISwipeGestureRecognizerDirection.Down
-        self.view.addGestureRecognizer(swipe)
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
-        self.view.addGestureRecognizer(tap)
-        
-    }
-    
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
-        self.navigationController?.navigationBarHidden = false
     }
     
     //Uses the added gesutrue of swipe down in order to close keyboard and then makes nav bar reappear

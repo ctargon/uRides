@@ -23,6 +23,23 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
     
     // MARK: Actions
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        emailTextField.delegate = self
+        emailConfirmTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
+        
+        //Creates a gesutre for swiping down and adds it to gesture recognizer
+        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
+        swipe.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipe)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
+        self.view.addGestureRecognizer(tap)
+    }
+    
     // checks for a valid email address shows message if invalid
     @IBAction func validateEmail(sender: AnyObject) {
         //let email = sender as? String
@@ -97,31 +114,9 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
         return true;
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        emailTextField.delegate = self
-        emailConfirmTextField.delegate = self
-        passwordTextField.delegate = self
-        confirmPasswordTextField.delegate = self
-        
-        //Hide the nav bar anytime the keyboard appears
-        //navigationController?.hidesBarsWhenKeyboardAppears = true
-        
-        //Creates a gesutre for swiping down and adds it to gesture recognizer
-        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboardSwipeDown")
-        swipe.direction = UISwipeGestureRecognizerDirection.Down
-        self.view.addGestureRecognizer(swipe)
-    }
-    
-    //Uses the added gesutrue of swipe down in order to close keyboard and then makes nav bar reappear
-    func dismissKeyboardSwipeDown() {
-        self.emailTextField.resignFirstResponder()
-        self.emailConfirmTextField.resignFirstResponder()
-        self.passwordTextField.resignFirstResponder()
-        self.confirmPasswordTextField.resignFirstResponder()
-        
-        //self.navigationController?.navigationBarHidden = false
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     // enables the buttons if the text field is not empty
