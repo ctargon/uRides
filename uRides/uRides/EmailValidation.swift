@@ -106,7 +106,7 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
         confirmPasswordTextField.delegate = self
         
         //Hide the nav bar anytime the keyboard appears
-        navigationController?.hidesBarsWhenKeyboardAppears = true
+        //navigationController?.hidesBarsWhenKeyboardAppears = true
         
         //Creates a gesutre for swiping down and adds it to gesture recognizer
         let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboardSwipeDown")
@@ -121,7 +121,7 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
         self.passwordTextField.resignFirstResponder()
         self.confirmPasswordTextField.resignFirstResponder()
         
-        self.navigationController?.navigationBarHidden = false
+        //self.navigationController?.navigationBarHidden = false
     }
     
     // enables the buttons if the text field is not empty
