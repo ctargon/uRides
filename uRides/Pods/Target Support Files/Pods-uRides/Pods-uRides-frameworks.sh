@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-uRides/IQKeyboardManagerSwift.framework"
   install_framework "Pods-uRides/PaymentKit.framework"
   install_framework "Pods-uRides/Stripe.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-uRides/IQKeyboardManagerSwift.framework"
   install_framework "Pods-uRides/PaymentKit.framework"
   install_framework "Pods-uRides/Stripe.framework"
 fi

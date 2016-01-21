@@ -6,6 +6,7 @@ use_frameworks!
 target 'uRides' do
 pod 'Stripe'
 pod 'PaymentKit'
+pod 'IQKeyboardManagerSwift'
 end
 
 target 'uRidesTests' do

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PaymentKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>36CA7423D3D870419A235835C4AA38EE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4B4A8612D50C1C396C11A6BB6E3F029A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E1C622C42C28963117A595BB6049464</key>
+		<key>7CF999D94F78A934B66C1ED1D900E1E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>902AB83FFB481EAFB9C1D1A854FE0E1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B86D5418F5205993E59E3528650E3511</key>
 		<dict>
 			<key>primary</key>
 			<true/>

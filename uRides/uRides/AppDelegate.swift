@@ -11,6 +11,7 @@ import CoreData
 import Stripe
 import Parse
 import Bolts
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("Ml4EuOE3u7ULVfuuCDOslw4QsFAWKxUDB8NMdlMi", clientKey: "rGsYhMwhsc7u74Gs9UmnD7E2io6SHW3U4IYUns3g")
         
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        IQKeyboardManager.sharedManager().enable = true
 
         return true
     }

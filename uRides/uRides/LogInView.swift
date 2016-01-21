@@ -53,7 +53,7 @@ class LogInView: UIViewController, UITextFieldDelegate {
         passwordEntryField.delegate = self
         
         //Hide the nav bar anytime the keyboard appears
-        navigationController?.hidesBarsWhenKeyboardAppears = true
+        //navigationController?.hidesBarsWhenKeyboardAppears = true
         
         //Creates a gesutre for swiping down and adds it to gesture recognizer
         
@@ -62,17 +62,13 @@ class LogInView: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(swipe)
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
         self.view.addGestureRecognizer(tap)
+        
     }
     
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
         self.navigationController?.navigationBarHidden = false
-        emailEntryTextField.layoutIfNeeded()
-    }
-    
-    @IBAction func userTappedBackground(sender : AnyObject) {
-        view.endEditing(true)
     }
     
     //Uses the added gesutrue of swipe down in order to close keyboard and then makes nav bar reappear
@@ -80,7 +76,7 @@ class LogInView: UIViewController, UITextFieldDelegate {
         self.emailEntryTextField.resignFirstResponder()
         self.passwordEntryField.resignFirstResponder()
     
-        self.navigationController?.navigationBarHidden = false
+        //self.navigationController?.navigationBarHidden = false
     
     }
     
