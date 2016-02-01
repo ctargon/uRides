@@ -45,13 +45,22 @@ class LogInView: UIViewController, UITextFieldDelegate {
         //let email = sender as? String
         let email = emailEntryTextField.text
         
+        func isValidEmail(email:String) -> Bool {
+            // println("validate calendar: \(testStr)")
+            let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+            
+            let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailTest.evaluateWithObject(email)
+        }
+        
+        
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         
         let result = emailTest.evaluateWithObject(email)
         
-        if (!result)
+        if (isValidEmail(email))
         {
             // display error message
             invalidMessageLabel.hidden = false
