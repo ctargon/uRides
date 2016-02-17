@@ -60,7 +60,7 @@ class LogInView: UIViewController, UITextFieldDelegate {
         
         let result = emailTest.evaluateWithObject(email)
         
-        if (isValidEmail(email))
+        if (result)
         {
             // display error message
             invalidMessageLabel.hidden = false
