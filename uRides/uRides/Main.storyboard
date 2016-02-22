@@ -129,16 +129,53 @@
                                     <segue destination="k5j-Lz-nLr" kind="show" id="3Rj-P9-5Ov"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQl-nb-K1w" userLabel="skip">
+                                <rect key="frame" x="20" y="20" width="200" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="pAO-EG-h6g">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="40" id="qKG-jw-tYY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <state key="normal" title="Skip(dev)">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pAO-EG-h6g"/>
+                                        <exclude reference="qKG-jw-tYY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pAO-EG-h6g"/>
+                                        <include reference="qKG-jw-tYY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="UfM-fQ-ih6" kind="show" id="Gcj-lE-1oQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eKT-3W-Wdv" firstAttribute="top" secondItem="kCn-gW-9b7" secondAttribute="bottom" constant="15" id="DPU-pJ-KYL"/>
+                            <constraint firstItem="zQl-nb-K1w" firstAttribute="top" secondItem="eKT-3W-Wdv" secondAttribute="bottom" constant="141" id="Px0-gh-Y4G"/>
                             <constraint firstItem="BXw-rM-5Ji" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="XYI-yj-CDc"/>
                             <constraint firstItem="eKT-3W-Wdv" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="bu7-Gv-Aoa"/>
                             <constraint firstItem="BXw-rM-5Ji" firstAttribute="top" secondItem="eYg-eI-cLZ" secondAttribute="topMargin" constant="175" id="cvd-oH-jVg"/>
                             <constraint firstItem="kCn-gW-9b7" firstAttribute="top" secondItem="BXw-rM-5Ji" secondAttribute="bottom" constant="175" id="czX-VU-oa4">
                                 <variation key="heightClass=regular-widthClass=compact" constant="25"/>
                             </constraint>
+                            <constraint firstItem="zQl-nb-K1w" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="f7v-w4-z0l"/>
                             <constraint firstItem="feo-Tn-4jA" firstAttribute="centerY" secondItem="eYg-eI-cLZ" secondAttribute="centerY" id="iHq-B2-gU3"/>
                             <constraint firstItem="kCn-gW-9b7" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="k9g-zb-fEI"/>
                             <constraint firstItem="feo-Tn-4jA" firstAttribute="centerX" secondItem="eYg-eI-cLZ" secondAttribute="centerX" id="qKN-my-2oM"/>
@@ -149,16 +186,19 @@
                                 <exclude reference="BXw-rM-5Ji"/>
                                 <exclude reference="eKT-3W-Wdv"/>
                                 <exclude reference="kCn-gW-9b7"/>
+                                <exclude reference="zQl-nb-K1w"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="DPU-pJ-KYL"/>
-                                <exclude reference="bu7-Gv-Aoa"/>
-                                <exclude reference="czX-VU-oa4"/>
-                                <exclude reference="k9g-zb-fEI"/>
-                                <exclude reference="XYI-yj-CDc"/>
-                                <exclude reference="cvd-oH-jVg"/>
                                 <exclude reference="iHq-B2-gU3"/>
                                 <exclude reference="qKN-my-2oM"/>
+                                <exclude reference="XYI-yj-CDc"/>
+                                <exclude reference="cvd-oH-jVg"/>
+                                <exclude reference="czX-VU-oa4"/>
+                                <exclude reference="k9g-zb-fEI"/>
+                                <exclude reference="DPU-pJ-KYL"/>
+                                <exclude reference="bu7-Gv-Aoa"/>
+                                <exclude reference="Px0-gh-Y4G"/>
+                                <exclude reference="f7v-w4-z0l"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -167,16 +207,19 @@
                                 <include reference="BXw-rM-5Ji"/>
                                 <include reference="eKT-3W-Wdv"/>
                                 <include reference="kCn-gW-9b7"/>
+                                <include reference="zQl-nb-K1w"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="DPU-pJ-KYL"/>
-                                <include reference="bu7-Gv-Aoa"/>
-                                <include reference="czX-VU-oa4"/>
-                                <include reference="k9g-zb-fEI"/>
-                                <include reference="XYI-yj-CDc"/>
-                                <include reference="cvd-oH-jVg"/>
                                 <include reference="iHq-B2-gU3"/>
                                 <include reference="qKN-my-2oM"/>
+                                <include reference="XYI-yj-CDc"/>
+                                <include reference="cvd-oH-jVg"/>
+                                <include reference="czX-VU-oa4"/>
+                                <include reference="k9g-zb-fEI"/>
+                                <include reference="DPU-pJ-KYL"/>
+                                <include reference="bu7-Gv-Aoa"/>
+                                <include reference="Px0-gh-Y4G"/>
+                                <include reference="f7v-w4-z0l"/>
                             </mask>
                         </variation>
                     </view>
@@ -1288,6 +1331,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AQ0-9L-8AZ"/>
-        <segue reference="VAf-at-dT8"/>
+        <segue reference="Gcj-lE-1oQ"/>
     </inferredMetricsTieBreakers>
 </document>
