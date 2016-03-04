@@ -1,18 +1,21 @@
 PODS:
-  - IQKeyboardManagerSwift (3.3.6)
+  - Firebase (2.5.1)
+  - IQKeyboardManagerSwift (4.0.0)
   - PaymentKit (1.2)
-  - Stripe (6.0.1):
-    - Stripe/Core (= 6.0.1)
-  - Stripe/Core (6.0.1)
+  - Stripe (6.2.0):
+    - Stripe/Core (= 6.2.0)
+  - Stripe/Core (6.2.0)
 
 DEPENDENCIES:
+  - Firebase
   - IQKeyboardManagerSwift
   - PaymentKit
   - Stripe
 
 SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: 111f01f029d9cda0647a2156d3b6efc24ad1e7f1
+  Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
   PaymentKit: 9bf248ab9a7343ccc65523890428e23678d1bde9
-  Stripe: 04f215191702c268b89fe0cdf28dc24a9688a71b
+  Stripe: 275524137e6c4cc1058f6d32ece248adf30a21f9
 
 COCOAPODS: 0.39.0

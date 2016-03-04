@@ -107,7 +107,6 @@ class LogInView: UIViewController, UITextFieldDelegate {
         {
             if (invalidMessageLabel.hidden == true)
             {
-                validateUser()
             }
         }
         else
@@ -127,29 +126,4 @@ class LogInView: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func validateUser() {
-        let userQuery = PFQuery(className: "uRidesUsers")
-        userQuery.whereKey("email", equalTo: emailEntryTextField.text!)
-        
-        userQuery.getFirstObjectInBackgroundWithBlock {
-            (object: PFObject?, error: NSError?) -> Void in
-            if error != nil || object == nil {
-                self.invalidUserLabel.hidden = false
-                self.failed = true
-                print("The getFirstObject request failed.")
-            } else {
-                
-                self.failed = false
-                
-                if object!["password"].isEqual(self.passwordEntryField.text) {
-                    self.logInButton.enabled = true
-                }
-                else {
-                    self.invalidUserLabel.hidden = false
-                }
-                // The find succeeded.
-                print("Successfully retrieved the object.")
-            }
-        }
-    }
 }

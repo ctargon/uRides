@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2E6A28FF0E98B306833A62644A695AF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4B4A8612D50C1C396C11A6BB6E3F029A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CF999D94F78A934B66C1ED1D900E1E1</key>
+		<key>B7AC9326D819482593FE118E915409D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>902AB83FFB481EAFB9C1D1A854FE0E1B</key>
+		<key>D4275590E81194CB8FC702072744BDC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B86D5418F5205993E59E3528650E3511</key>
+		<key>E9B5C577F89B2F2EBCB51E034A136673</key>
 		<dict>
 			<key>primary</key>
 			<true/>

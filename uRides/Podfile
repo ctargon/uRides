@@ -7,6 +7,7 @@ target 'uRides' do
 pod 'Stripe'
 pod 'PaymentKit'
 pod 'IQKeyboardManagerSwift'
+pod 'Firebase'
 end
 
 target 'uRidesTests' do

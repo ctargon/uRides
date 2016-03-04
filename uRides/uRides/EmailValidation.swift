@@ -136,25 +136,7 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
     
     // adds the users information if everything is valid
     @IBAction func submitUserInfo(sender: AnyObject) {
-        
-        // parse entry
-        let userObject = PFObject(className: "uRidesUsers")
-        userObject["password"] = passwordTextField.text
-        userObject["email"] = emailTextField.text
-        // test entry... needs updating. can also add first and last name here
-        userObject["studentID"] = "C111111110"
-        userObject["school"] = "Clemson"
-                    
-        userObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            if (success)
-            {
-                print("User has been saved.")
-            }
-            else
-            {
-                // something went wrong
-            }
-        }
+
     
     }
 }
