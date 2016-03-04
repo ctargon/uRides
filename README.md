@@ -27,13 +27,16 @@ git reset --hard origin/master
    any merging conflicts like I was having.
 
 
-# What to do, what to do!
+# What's next
 
-Launch screen -> finished up launch screen on 12/21. Need to check constraint bounds and make sure that the bounds look
-                 correct for every iPhone size. Also, find attributes that will ensure the application is only allowed
-                 to go in portrait mode.
+Front End: 
+   * Geo location suggestions in destination
+   * Update button for request a ride... needs to be sexier
+   * Add a switch in profile to change to driver mode
+   * Post ride view with ratings and tips etc
 
-Sign up/Log in-> This is the next page to be completed on the story board. 
+Back End:
+   * Pretty much everything, starting fresh with Firebase to handle data
 
 useful site for icons
 
