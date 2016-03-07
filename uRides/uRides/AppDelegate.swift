@@ -13,6 +13,8 @@ import Bolts
 import IQKeyboardManagerSwift
 import Firebase
 
+let FirebaseUrl = "https://davideast.firebaseio.com/"
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

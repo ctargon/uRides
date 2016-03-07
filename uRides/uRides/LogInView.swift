@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class LogInView: UIViewController, UITextFieldDelegate {
     
@@ -18,7 +19,13 @@ class LogInView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var invalidUserLabel: UILabel!
     
+    
+    
     var failed: Bool = true
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +40,7 @@ class LogInView: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(swipe)
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
         self.view.addGestureRecognizer(tap)
+        self.logInButton.enabled = true
         
     }
     
@@ -71,6 +79,20 @@ class LogInView: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func logInbut(sender: AnyObject) {
+        let ref = Firebase(url: "https://crackling-fire-4869.firebaseio.com/")
+        ref.authUser(emailEntryTextField.text, password: passwordEntryField.text,
+            withCompletionBlock: { error, authData in
+                if error != nil {
+                    // There was an error logging in to this account
+                    print("Error logging in")
+                } else {
+                    print("Success logging in")
+                    self.performSegueWithIdentifier("showMap", sender: sender)
+                }
+        })
+    }
+    
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
@@ -99,31 +121,23 @@ class LogInView: UIViewController, UITextFieldDelegate {
         invalidUserLabel.hidden = true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
-        
-        //emailEntryTextField.layoutIfNeeded()
-        
-        if ((emailEntryTextField.text?.isEmpty == false) && (passwordEntryField.text?.isEmpty == false))
-        {
-            if (invalidMessageLabel.hidden == true)
-            {
-            }
-        }
-        else
-        {
-            self.logInButton.enabled = false
-        }
-    }
+//    func textFieldDidEndEditing(textField: UITextField) {
+//        
+//        //emailEntryTextField.layoutIfNeeded()
+//        
+//        if ((emailEntryTextField.text?.isEmpty == false) && (passwordEntryField.text?.isEmpty == false))
+//        {
+//            if (invalidMessageLabel.hidden == true)
+//            {
+//            }
+//        }
+//        else
+//        {
+//            self.logInButton.enabled = false
+//        }
+//    }
     
-    @IBAction func logInButtonPressed(sender: AnyObject) {
-        if (failed)
-        {
-            self.invalidUserLabel.hidden = false
-        }
-        else
-        {
-            self.invalidUserLabel.hidden = true
-        }
-    }
+    
+    
     
 }

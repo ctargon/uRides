@@ -6,28 +6,28 @@
 	<dict>
 		<key>Firebase.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>PaymentKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-uRides.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Stripe.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -42,22 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CF999D94F78A934B66C1ED1D900E1E1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>902AB83FFB481EAFB9C1D1A854FE0E1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B86D5418F5205993E59E3528650E3511</key>
 		<dict>
 			<key>primary</key>
 			<true/>

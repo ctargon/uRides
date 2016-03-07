@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class Emailvalidation: UIViewController, UITextFieldDelegate {
     
@@ -22,6 +23,8 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var createUserButton: UIButton!
     
     // MARK: Actions
+    
+    let ref = Firebase(url: "https://crackling-fire-4869.firebaseio.com/")
     
     
     override func viewDidLoad() {
@@ -137,6 +140,16 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
     // adds the users information if everything is valid
     @IBAction func submitUserInfo(sender: AnyObject) {
 
-    
+        ref.createUser(emailTextField.text, password: passwordTextField.text,
+            withValueCompletionBlock: { error, result in
+                
+                if error != nil {
+                    // There was an error creating the account
+                } else {
+                    let uid = result["uid"] as? String
+                    print("Successfully created user account with uid: \(uid)")
+                }
+        })
     }
+    
 }

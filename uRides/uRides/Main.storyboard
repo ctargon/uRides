@@ -212,7 +212,7 @@
         <!--LogIn-->
         <scene sceneID="5ca-v9-p7i">
             <objects>
-                <viewController id="mVU-PZ-VWT" userLabel="LogIn" customClass="LogInView" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="auth" id="mVU-PZ-VWT" userLabel="LogIn" customClass="LogInView" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dUJ-SY-tlT"/>
                         <viewControllerLayoutGuide type="bottom" id="xMg-Q5-Nww"/>
@@ -324,8 +324,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="logInButtonPressed:" destination="mVU-PZ-VWT" eventType="touchUpInside" id="myq-0L-VTn"/>
-                                    <segue destination="lTg-i3-fsM" kind="show" id="jF7-F7-veb"/>
+                                    <action selector="logInbut:" destination="mVU-PZ-VWT" eventType="touchUpInside" id="BF8-Ll-gTu"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Email or password is incorrect*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USP-hq-5wb">
@@ -422,7 +421,7 @@
                     <navigationItem key="navigationItem" title="Log In" id="RmH-Zb-I3E" userLabel="Nav Bar">
                         <barButtonItem key="leftBarButtonItem" image="1451985489_Left_2" id="Agl-Oc-eeA">
                             <connections>
-                                <segue destination="1Ll-5s-Rqc" kind="show" id="fbD-wL-3Qs"/>
+                                <segue destination="1Ll-5s-Rqc" kind="show" identifier="" id="fbD-wL-3Qs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -432,6 +431,7 @@
                         <outlet property="invalidUserLabel" destination="USP-hq-5wb" id="ZOK-kQ-4BZ"/>
                         <outlet property="logInButton" destination="fnU-mT-x13" id="dAk-ne-LvI"/>
                         <outlet property="passwordEntryField" destination="sW0-S4-5AO" id="HEG-Va-yeD"/>
+                        <segue destination="lTg-i3-fsM" kind="show" identifier="showMap" id="tdw-kZ-FAs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljZ-wI-wLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -441,7 +441,7 @@
         <!--MapViewController-->
         <scene sceneID="kw8-I8-PZO">
             <objects>
-                <viewController id="UfM-fQ-ih6" userLabel="MapViewController" customClass="LocationViewController" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="map" title="map" id="UfM-fQ-ih6" userLabel="MapViewController" customClass="LocationViewController" customModule="uRides" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xY0-0r-43Z"/>
                         <viewControllerLayoutGuide type="bottom" id="mtZ-0E-cLc"/>
@@ -1447,8 +1447,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VAf-at-dT8"/>
-        <segue reference="AQ0-9L-8AZ"/>
-        <segue reference="jF7-F7-veb"/>
+        <segue reference="fbD-wL-3Qs"/>
+        <segue reference="tdw-kZ-FAs"/>
         <segue reference="xvb-dQ-Boj"/>
     </inferredMetricsTieBreakers>
 </document>
