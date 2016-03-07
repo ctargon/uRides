@@ -17,7 +17,7 @@ protocol HandleMapSearch {
 
 class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var address: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     
     
@@ -58,6 +58,12 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         definesPresentationContext = true
         locationSearchTable.mapView = mapView
         locationSearchTable.handleMapSearchDelegate = self
+        
+        //let currentLocation = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+
+        //geoCode(currentLocation)
+        
+        //address.text = currentLocation.address.text
 
         
         // Do any additional setup after loading the view.
