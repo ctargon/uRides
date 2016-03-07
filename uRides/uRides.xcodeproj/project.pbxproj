@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5527D1391C7BC49200CB0CE5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527D1381C7BC49200CB0CE5 /* LocationViewController.swift */; };
+		55C8A1641C8D35760041DBB6 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8A1631C8D35760041DBB6 /* LocationSearchTable.swift */; };
 		BC5F2BEECA323A541B3BBB8D /* Pods_uRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CB9B77E57FD233CF62BF2C /* Pods_uRides.framework */; };
 		DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04141C28B193005E0A4C /* Images.xcassets */; };
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
@@ -59,6 +60,7 @@
 		283D3535B4BE929ACE7F0468 /* Pods-uRides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.debug.xcconfig"; sourceTree = "<group>"; };
 		2F45D40EC5B47193F24C62A4 /* Pods-uRides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uRides.release.xcconfig"; path = "Pods/Target Support Files/Pods-uRides/Pods-uRides.release.xcconfig"; sourceTree = "<group>"; };
 		5527D1381C7BC49200CB0CE5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		55C8A1631C8D35760041DBB6 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		DAFE04141C28B193005E0A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loadScreen.storyboard; sourceTree = "<group>"; };
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				DF7B14291C2894F900DDE87E /* AppDelegate.swift */,
 				DF7B142B1C2894F900DDE87E /* ViewController.swift */,
 				DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */,
+				55C8A1631C8D35760041DBB6 /* LocationSearchTable.swift */,
 				DFF476621C2B510000A39059 /* StudentCheck.swift */,
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
@@ -418,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
+				55C8A1641C8D35760041DBB6 /* LocationSearchTable.swift in Sources */,
 				DF83DFA51C33571A00F6A36E /* payViewer.m in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
