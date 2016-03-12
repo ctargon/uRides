@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GeoFire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E6A28FF0E98B306833A62644A695AF3</key>
+		<key>09EB60607090AEAF00258B4DFE93F28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41CE0E548650F701461EAB35CAFC17B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,12 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7AC9326D819482593FE118E915409D7</key>
+		<key>9B713BD6156ADEA41DE6D9DD52E976DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4275590E81194CB8FC702072744BDC1</key>
+		<key>B7AC9326D819482593FE118E915409D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

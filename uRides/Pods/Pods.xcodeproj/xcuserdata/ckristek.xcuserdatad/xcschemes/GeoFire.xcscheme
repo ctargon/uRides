@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '730B62F21F9B72BD25096D4E'
-               BlueprintName = 'PaymentKit'
+               BlueprintIdentifier = 'E19B5D39C848C881403923B0'
+               BlueprintName = 'GeoFire'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PaymentKit.framework'>
+               BuildableName = 'GeoFire.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

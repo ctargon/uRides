@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Firebase
+import GeoFire
 
 
 protocol HandleMapSearch {
@@ -21,12 +23,12 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
     @IBOutlet weak var mapView: MKMapView!
     
     
+    
     @IBAction func getDir(sender: AnyObject) {
-        if let selectedPin = selectedPin {
-            let mapItem = MKMapItem(placemark: selectedPin)
-            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
-            mapItem.openInMapsWithLaunchOptions(launchOptions)
-        }
+        let uniqueReference = firebase?.childByAutoId()
+        let key = uniqueReference?.key
+        let location = selectedPin?.location
+        geofire!.setLocation(location, forKey: key)
     }
     
     var geoCoder: CLGeocoder!
@@ -34,6 +36,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
     var previousAddress: String!
     var resultSearchController:UISearchController? = nil
     var selectedPin:MKPlacemark? = nil
+    var firebase: Firebase?
+    var geofire: GeoFire?
     
     
     override func viewDidLoad() {
@@ -45,6 +49,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         locationManager.requestAlwaysAuthorization()
         locationManager.requestLocation()
         geoCoder = CLGeocoder()
+        
+        firebase = Firebase(url: "https://crackling-fire-4869.firebaseio.com/")
+        let geofireRef = Firebase(url: "https://crackling-fire-4869.firebaseio.com/geo")
+        geofire = GeoFire(firebaseRef: geofireRef)
         
         let locationSearchTable = storyboard!.instantiateViewControllerWithIdentifier("LocationSearchTable") as! LocationSearchTable
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)

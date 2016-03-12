@@ -8,6 +8,7 @@ pod 'Stripe'
 pod 'PaymentKit'
 pod 'IQKeyboardManagerSwift'
 pod 'Firebase'
+pod 'GeoFire', '>= 1.1'
 end
 
 target 'uRidesTests' do
