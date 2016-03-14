@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SettingsView.swift">
-   </FileRef>
-   <FileRef
       location = "group:uRides.xcodeproj">
    </FileRef>
    <FileRef

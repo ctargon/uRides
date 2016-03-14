@@ -26,6 +26,7 @@
 		DF5F5A861C3C1E87005D6B40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A851C3C1E87005D6B40 /* libz.tbd */; };
 		DF5F5A881C3C1E99005D6B40 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A871C3C1E99005D6B40 /* libsqlite3.tbd */; };
 		DF5F5A8A1C3C1F28005D6B40 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A891C3C1F28005D6B40 /* Bolts.framework */; };
+		DF63ED3A1C974A4000A7FB3F /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63ED391C974A4000A7FB3F /* paymentViewController.swift */; };
 		DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */; };
 		DF7B142A1C2894F900DDE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14291C2894F900DDE87E /* AppDelegate.swift */; };
 		DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B142B1C2894F900DDE87E /* ViewController.swift */; };
@@ -33,7 +34,6 @@
 		DF7B14341C2894F900DDE87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7B14331C2894F900DDE87E /* Assets.xcassets */; };
 		DF7B14421C2894F900DDE87E /* uRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14411C2894F900DDE87E /* uRidesTests.swift */; };
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
-		DF83DFA51C33571A00F6A36E /* payViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF83DFA41C33571A00F6A36E /* payViewer.m */; };
 		DF83DFA81C34686300F6A36E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF83DFA71C34686300F6A36E /* CoreLocation.framework */; };
 		DF83DFAC1C34690B00F6A36E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF83DFAB1C34690B00F6A36E /* MapKit.framework */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
@@ -80,6 +80,7 @@
 		DF5F5A851C3C1E87005D6B40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DF5F5A871C3C1E99005D6B40 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DF5F5A891C3C1F28005D6B40 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DF63ED391C974A4000A7FB3F /* paymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		DF7B14261C2894F900DDE87E /* uRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B14291C2894F900DDE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		DF7B14481C2894F900DDE87E /* uRidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uRidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uRidesUITests.swift; sourceTree = "<group>"; };
 		DF7B144E1C2894F900DDE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF83DFA41C33571A00F6A36E /* payViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payViewer.m; sourceTree = "<group>"; };
 		DF83DFA61C33579500F6A36E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DF83DFA71C34686300F6A36E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DF83DFAB1C34690B00F6A36E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -204,8 +204,8 @@
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
 				55B206921C91FFD400F10C69 /* DriverMap.swift */,
-				DF83DFA41C33571A00F6A36E /* payViewer.m */,
 				DF83DFA61C33579500F6A36E /* ViewController.h */,
+				DF63ED391C974A4000A7FB3F /* paymentViewController.swift */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
 				DF7B14381C2894F900DDE87E /* Info.plist */,
@@ -428,7 +428,7 @@
 			files = (
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				55C8A1641C8D35760041DBB6 /* LocationSearchTable.swift in Sources */,
-				DF83DFA51C33571A00F6A36E /* payViewer.m in Sources */,
+				DF63ED3A1C974A4000A7FB3F /* paymentViewController.swift in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				55B206931C91FFD400F10C69 /* DriverMap.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,

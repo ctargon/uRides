@@ -17,7 +17,8 @@
                              initWithFrame:CGRectMake(15, 130, CGRectGetWidth(self.view.frame) - 30, 44)];;
     self.paymentTextField.delegate = self;
     [self.view addSubview:self.paymentTextField];
-    
+    [self.view bringSubviewToFront:self.paymentTextField];
+
     self.submitButton = [UIButton buttonWithType:UIButtonTypeSystem];
     self.submitButton.frame = CGRectMake(15, 150, 100, 44);
     self.submitButton.enabled = NO;
@@ -34,7 +35,7 @@
 - (IBAction)submitCard:(id)sender {
     // If you have your own form for getting credit card information, you can construct
     // your own STPCardParams from number, month, year, and CVV.
-    STPCardParams* card = [self.paymentTextField card];
+    STPCardParams* card = [self.paymentTextField cardParams];
     [[STPAPIClient sharedClient]
      createTokenWithCard:card
      completion:^(STPToken *token, NSError *error) {

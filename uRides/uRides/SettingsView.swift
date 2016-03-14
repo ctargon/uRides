@@ -16,10 +16,5 @@ class SettingsView: UIViewController{
         super.viewDidLoad()
     }
     
-    @IBAction func pushDriverMode(sender: AnyObject) {
-         self.performSegueWithIdentifier("showDriverMap", sender:sender)
-    }
-    
-    
     
 }

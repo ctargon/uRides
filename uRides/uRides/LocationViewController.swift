@@ -12,7 +12,6 @@ import CoreLocation
 import Firebase
 import GeoFire
 
-
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
 }
