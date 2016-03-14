@@ -87,13 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-uRides/Firebase.framework"
   install_framework "Pods-uRides/GeoFire.framework"
   install_framework "Pods-uRides/IQKeyboardManagerSwift.framework"
-  install_framework "Pods-uRides/PaymentKit.framework"
   install_framework "Pods-uRides/Stripe.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-uRides/Firebase.framework"
   install_framework "Pods-uRides/GeoFire.framework"
   install_framework "Pods-uRides/IQKeyboardManagerSwift.framework"
-  install_framework "Pods-uRides/PaymentKit.framework"
   install_framework "Pods-uRides/Stripe.framework"
 fi

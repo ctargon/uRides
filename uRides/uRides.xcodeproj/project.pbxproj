@@ -16,6 +16,7 @@
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
 		DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B99541C2CD3CF00E007BC /* LogInView.swift */; };
+		DF32742C1C9775EB00E0CA5F /* cardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF32742B1C9775EB00E0CA5F /* cardViewController.m */; };
 		DF5F5A781C3C1E2F005D6B40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A771C3C1E2F005D6B40 /* AudioToolbox.framework */; };
 		DF5F5A7A1C3C1E3D005D6B40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A791C3C1E3D005D6B40 /* CFNetwork.framework */; };
 		DF5F5A7C1C3C1E48005D6B40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A7B1C3C1E48005D6B40 /* CoreGraphics.framework */; };
@@ -26,7 +27,6 @@
 		DF5F5A861C3C1E87005D6B40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A851C3C1E87005D6B40 /* libz.tbd */; };
 		DF5F5A881C3C1E99005D6B40 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A871C3C1E99005D6B40 /* libsqlite3.tbd */; };
 		DF5F5A8A1C3C1F28005D6B40 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A891C3C1F28005D6B40 /* Bolts.framework */; };
-		DF63ED3A1C974A4000A7FB3F /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63ED391C974A4000A7FB3F /* paymentViewController.swift */; };
 		DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */; };
 		DF7B142A1C2894F900DDE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B14291C2894F900DDE87E /* AppDelegate.swift */; };
 		DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B142B1C2894F900DDE87E /* ViewController.swift */; };
@@ -70,6 +70,8 @@
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF0B99541C2CD3CF00E007BC /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uRidesBridgingHeader.h; sourceTree = "<group>"; };
+		DF32742B1C9775EB00E0CA5F /* cardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cardViewController.m; sourceTree = "<group>"; };
+		DF32742D1C97771200E0CA5F /* cardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardViewController.h; sourceTree = "<group>"; };
 		DF5F5A771C3C1E2F005D6B40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DF5F5A791C3C1E3D005D6B40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DF5F5A7B1C3C1E48005D6B40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,7 +82,6 @@
 		DF5F5A851C3C1E87005D6B40 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DF5F5A871C3C1E99005D6B40 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DF5F5A891C3C1F28005D6B40 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		DF63ED391C974A4000A7FB3F /* paymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		DF7B14261C2894F900DDE87E /* uRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7B14291C2894F900DDE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,12 +201,13 @@
 				55C8A1631C8D35760041DBB6 /* LocationSearchTable.swift */,
 				DFF476621C2B510000A39059 /* StudentCheck.swift */,
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
+				DF32742B1C9775EB00E0CA5F /* cardViewController.m */,
+				DF32742D1C97771200E0CA5F /* cardViewController.h */,
 				55B206901C91DD6000F10C69 /* SettingsView.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
 				55B206921C91FFD400F10C69 /* DriverMap.swift */,
 				DF83DFA61C33579500F6A36E /* ViewController.h */,
-				DF63ED391C974A4000A7FB3F /* paymentViewController.swift */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
 				DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */,
 				DF7B14381C2894F900DDE87E /* Info.plist */,
@@ -428,9 +430,9 @@
 			files = (
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				55C8A1641C8D35760041DBB6 /* LocationSearchTable.swift in Sources */,
-				DF63ED3A1C974A4000A7FB3F /* paymentViewController.swift in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				55B206931C91FFD400F10C69 /* DriverMap.swift in Sources */,
+				DF32742C1C9775EB00E0CA5F /* cardViewController.m in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				5527D1391C7BC49200CB0CE5 /* LocationViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,

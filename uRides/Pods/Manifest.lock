@@ -1,26 +1,26 @@
 PODS:
+  - CardIO (5.3.1)
   - Firebase (2.5.1)
   - GeoFire (1.1.3):
     - Firebase (~> 2.2)
     - FirebaseOSX (~> 2.4)
   - IQKeyboardManagerSwift (4.0.0)
-  - PaymentKit (1.2)
   - Stripe (6.2.0):
     - Stripe/Core (= 6.2.0)
   - Stripe/Core (6.2.0)
 
 DEPENDENCIES:
+  - CardIO
   - Firebase
-  - GeoFire (>= 1.1)
+  - GeoFire
   - IQKeyboardManagerSwift
-  - PaymentKit
   - Stripe
 
 SPEC CHECKSUMS:
+  CardIO: a299efcd0348c3b256a1da53f22951319c3855a2
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
   GeoFire: 88535ea6f82cb0555fcea87b36b7c263a2900ae8
   IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
-  PaymentKit: 9bf248ab9a7343ccc65523890428e23678d1bde9
   Stripe: 275524137e6c4cc1058f6d32ece248adf30a21f9
 
 COCOAPODS: 0.39.0

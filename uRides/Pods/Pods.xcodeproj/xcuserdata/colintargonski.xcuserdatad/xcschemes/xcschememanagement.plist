@@ -8,66 +8,36 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>GeoFire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>PaymentKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-uRides.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Stripe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09EB60607090AEAF00258B4DFE93F28B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2E6A28FF0E98B306833A62644A695AF3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>41CE0E548650F701461EAB35CAFC17B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B4A8612D50C1C396C11A6BB6E3F029A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9B713BD6156ADEA41DE6D9DD52E976DF</key>
+		<key>58A0881F19EC5B7BC61BF65BF17E4158</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4275590E81194CB8FC702072744BDC1</key>
+		<key>CEC5B3D56C0273B989703BD53F6C9295</key>
 		<dict>
 			<key>primary</key>
 			<true/>

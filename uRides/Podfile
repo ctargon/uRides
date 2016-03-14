@@ -5,10 +5,10 @@ use_frameworks!
 
 target 'uRides' do
 pod 'Stripe'
-pod 'PaymentKit'
 pod 'IQKeyboardManagerSwift'
 pod 'Firebase'
-pod 'GeoFire', '>= 1.1'
+pod 'GeoFire'
+pod 'CardIO'
 end
 
 target 'uRidesTests' do
