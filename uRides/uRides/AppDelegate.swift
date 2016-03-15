@@ -14,9 +14,7 @@ import IQKeyboardManagerSwift
 import Firebase
 import GeoFire
 
-
 let FirebaseUrl = "https://davideast.firebaseio.com/"
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

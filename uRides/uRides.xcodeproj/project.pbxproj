@@ -16,7 +16,8 @@
 		DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE04181C29EA94005E0A4C /* loadScreen.storyboard */; };
 		DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE041A1C29EBA1005E0A4C /* Main.storyboard */; };
 		DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B99541C2CD3CF00E007BC /* LogInView.swift */; };
-		DF32742C1C9775EB00E0CA5F /* cardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF32742B1C9775EB00E0CA5F /* cardViewController.m */; };
+		DF23E1841C97DBEC001EACB0 /* manageCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */; };
+		DF32742F1C977A7900E0CA5F /* cardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32742E1C977A7900E0CA5F /* cardViewController.swift */; };
 		DF5F5A781C3C1E2F005D6B40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A771C3C1E2F005D6B40 /* AudioToolbox.framework */; };
 		DF5F5A7A1C3C1E3D005D6B40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A791C3C1E3D005D6B40 /* CFNetwork.framework */; };
 		DF5F5A7C1C3C1E48005D6B40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A7B1C3C1E48005D6B40 /* CoreGraphics.framework */; };
@@ -70,8 +71,8 @@
 		DAFE041A1C29EBA1005E0A4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF0B99541C2CD3CF00E007BC /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uRidesBridgingHeader.h; sourceTree = "<group>"; };
-		DF32742B1C9775EB00E0CA5F /* cardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cardViewController.m; sourceTree = "<group>"; };
-		DF32742D1C97771200E0CA5F /* cardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardViewController.h; sourceTree = "<group>"; };
+		DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageCardsViewController.swift; sourceTree = "<group>"; };
+		DF32742E1C977A7900E0CA5F /* cardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardViewController.swift; sourceTree = "<group>"; };
 		DF5F5A771C3C1E2F005D6B40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DF5F5A791C3C1E3D005D6B40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DF5F5A7B1C3C1E48005D6B40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -201,11 +202,11 @@
 				55C8A1631C8D35760041DBB6 /* LocationSearchTable.swift */,
 				DFF476621C2B510000A39059 /* StudentCheck.swift */,
 				DF6FD4F21C2C64EE00C9E1ED /* EmailValidation.swift */,
-				DF32742B1C9775EB00E0CA5F /* cardViewController.m */,
-				DF32742D1C97771200E0CA5F /* cardViewController.h */,
+				DF32742E1C977A7900E0CA5F /* cardViewController.swift */,
 				55B206901C91DD6000F10C69 /* SettingsView.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
+				DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */,
 				55B206921C91FFD400F10C69 /* DriverMap.swift */,
 				DF83DFA61C33579500F6A36E /* ViewController.h */,
 				DF7B14331C2894F900DDE87E /* Assets.xcassets */,
@@ -429,10 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
+				DF23E1841C97DBEC001EACB0 /* manageCardsViewController.swift in Sources */,
 				55C8A1641C8D35760041DBB6 /* LocationSearchTable.swift in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				55B206931C91FFD400F10C69 /* DriverMap.swift in Sources */,
-				DF32742C1C9775EB00E0CA5F /* cardViewController.m in Sources */,
+				DF32742F1C977A7900E0CA5F /* cardViewController.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				5527D1391C7BC49200CB0CE5 /* LocationViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
@@ -571,7 +573,46 @@
 				);
 				INFOPLIST_FILE = uRides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-objC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/CardIO/CardIO",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CardIO\"",
+					"-l\"c++\"",
+					"-l\"opencv_core\"",
+					"-l\"opencv_imgproc\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Firebase\"",
+					"-framework",
+					"\"GeoFire\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Stripe\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uRides-Corporation.uRides";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -592,7 +633,46 @@
 				);
 				INFOPLIST_FILE = uRides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-objC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/CardIO/CardIO",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CardIO\"",
+					"-l\"c++\"",
+					"-l\"opencv_core\"",
+					"-l\"opencv_imgproc\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Firebase\"",
+					"-framework",
+					"\"GeoFire\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Stripe\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uRides-Corporation.uRides";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
