@@ -11,6 +11,7 @@ import MapKit
 import CoreLocation
 import Firebase
 import GeoFire
+import SkyFloatingLabelTextField
 
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
@@ -71,8 +72,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         //geoCode(currentLocation)
         
         //address.text = currentLocation.address.text
-
         
+
         // Do any additional setup after loading the view.
     }
 
@@ -138,7 +139,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         let smallSquare = CGSize(width: 30, height: 30)
         let button = UIButton(frame: CGRect(origin: CGPointZero, size: smallSquare))
         button.setBackgroundImage(UIImage(named: "car"), forState: .Normal)
-        button.addTarget(self, action: "getDirections", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: Selector("getDirections"), forControlEvents: .TouchUpInside)
         pinView?.leftCalloutAccessoryView = button
         return pinView
     }

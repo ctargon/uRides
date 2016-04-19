@@ -9,6 +9,7 @@ pod 'IQKeyboardManagerSwift'
 pod 'Firebase'
 pod 'GeoFire'
 pod 'CardIO'
+pod 'SkyFloatingLabelTextField'
 end
 
 target 'uRidesTests' do

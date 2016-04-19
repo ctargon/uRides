@@ -36,10 +36,10 @@ class Emailvalidation: UIViewController, UITextFieldDelegate {
         confirmPasswordTextField.delegate = self
         
         //Creates a gesutre for swiping down and adds it to gesture recognizer
-        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "dismissKeyboard")
+        let swipe: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(Emailvalidation.dismissKeyboard))
         swipe.direction = UISwipeGestureRecognizerDirection.Down
         self.view.addGestureRecognizer(swipe)
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard");
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Emailvalidation.dismissKeyboard));
         self.view.addGestureRecognizer(tap)
     }
     
