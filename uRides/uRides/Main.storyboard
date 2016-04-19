@@ -1111,6 +1111,9 @@
                                                             <include reference="wqS-AV-MHQ"/>
                                                         </mask>
                                                     </variation>
+                                                    <connections>
+                                                        <segue destination="H7a-oQ-eCL" kind="show" id="Kya-nu-KYz"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -1219,6 +1222,9 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dF7-MW-keR" kind="presentation" id="n0T-ab-NXz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1455,6 +1461,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJf-BZ-lWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6271.5" y="-250.5"/>
+        </scene>
+        <!--Driver-->
+        <scene sceneID="aaP-jc-nf5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Driver" id="H7a-oQ-eCL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAw-Eb-s3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7007.25" y="-222"/>
+        </scene>
+        <!--DriverSignUp-->
+        <scene sceneID="npf-UY-F6R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DriverSignUp" id="dF7-MW-keR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIf-Js-VCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6852.75" y="-126.75"/>
         </scene>
         <!--Manage Cards-->
         <scene sceneID="z7r-8s-acM">
@@ -2300,7 +2322,7 @@
                     <navigationItem key="navigationItem" title="Name" id="5FI-9Z-kOX">
                         <barButtonItem key="leftBarButtonItem" image="1451985489_Left_2" id="TNJ-rH-fyY">
                             <connections>
-                                <segue destination="UfM-fQ-ih6" kind="show" id="aaz-Cu-sLE"/>
+                                <segue destination="NKj-uf-IS3" kind="show" id="L0C-98-N5G"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2339,9 +2361,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="Jij-WG-MFZ"/>
         <segue reference="LE0-Tb-eCA"/>
-        <segue reference="aaz-Cu-sLE"/>
+        <segue reference="HFo-jS-MVJ"/>
+        <segue reference="L0C-98-N5G"/>
         <segue reference="Xhq-5t-fdg"/>
-        <segue reference="p17-bY-2Hp"/>
         <segue reference="tPJ-fj-Eeb"/>
     </inferredMetricsTieBreakers>
 </document>

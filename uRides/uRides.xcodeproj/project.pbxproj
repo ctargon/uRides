@@ -37,6 +37,8 @@
 		DF7B144D1C2894F900DDE87E /* uRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B144C1C2894F900DDE87E /* uRidesUITests.swift */; };
 		DF83DFA81C34686300F6A36E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF83DFA71C34686300F6A36E /* CoreLocation.framework */; };
 		DF83DFAC1C34690B00F6A36E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF83DFAB1C34690B00F6A36E /* MapKit.framework */; };
+		DF8DFD0D1CC5C82C0019F4CE /* Driver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8DFD0C1CC5C82C0019F4CE /* Driver.storyboard */; };
+		DF8DFD0F1CC5CB5D0019F4CE /* DriverSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +101,8 @@
 		DF83DFA61C33579500F6A36E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DF83DFA71C34686300F6A36E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DF83DFAB1C34690B00F6A36E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DF8DFD0C1CC5C82C0019F4CE /* Driver.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Driver.storyboard; sourceTree = "<group>"; };
+		DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DriverSignUp.storyboard; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +210,8 @@
 				55B206901C91DD6000F10C69 /* SettingsView.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
 				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
+				DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */,
+				DF8DFD0C1CC5C82C0019F4CE /* Driver.storyboard */,
 				DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */,
 				55B206921C91FFD400F10C69 /* DriverMap.swift */,
 				DF83DFA61C33579500F6A36E /* ViewController.h */,
@@ -353,7 +359,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8DFD0D1CC5C82C0019F4CE /* Driver.storyboard in Resources */,
 				DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */,
+				DF8DFD0F1CC5CB5D0019F4CE /* DriverSignUp.storyboard in Resources */,
 				DF7B14341C2894F900DDE87E /* Assets.xcassets in Resources */,
 				DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */,
 				DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */,
