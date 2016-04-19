@@ -501,18 +501,45 @@
                                     <action selector="getDir:" destination="UfM-fQ-ih6" eventType="touchUpInside" id="kUe-xk-CD2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-21-rRW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-21-rRW" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.9670797413793103" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="NNd-Wb-1Hz">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="335"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="40" id="hY9-kE-mc9">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter a destination"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Destination"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="NNd-Wb-1Hz"/>
@@ -537,7 +564,9 @@
                             <constraint firstAttribute="trailing" secondItem="MM0-Ea-FA2" secondAttribute="trailing" id="kbp-vh-Hhk"/>
                             <constraint firstItem="6R8-ds-GgH" firstAttribute="leading" secondItem="Nen-R9-9Xq" secondAttribute="leading" id="pDJ-fK-Jqh"/>
                             <constraint firstItem="uY8-21-rRW" firstAttribute="centerX" secondItem="Nen-R9-9Xq" secondAttribute="centerX" id="s88-8b-s2h"/>
-                            <constraint firstItem="uY8-21-rRW" firstAttribute="top" secondItem="Nen-R9-9Xq" secondAttribute="topMargin" constant="100" id="x0h-PZ-baf"/>
+                            <constraint firstItem="uY8-21-rRW" firstAttribute="top" secondItem="Nen-R9-9Xq" secondAttribute="topMargin" constant="100" id="x0h-PZ-baf">
+                                <variation key="heightClass=regular-widthClass=compact" constant="130"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -586,6 +615,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="address" destination="uY8-21-rRW" id="tbU-Ah-IXE"/>
+                        <outlet property="enterDestinationTextField" destination="uY8-21-rRW" id="Fd4-Fw-23n"/>
                         <outlet property="mapView" destination="MM0-Ea-FA2" id="lMr-1C-EfH"/>
                     </connections>
                 </viewController>
@@ -1067,10 +1097,10 @@
                             <tableViewSection headerTitle="DRIVER" id="XaR-n4-eeS">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KSL-Ll-BvT">
-                                        <rect key="frame" x="0.0" y="504" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="460" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSL-Ll-BvT" id="Qnc-XI-t0A">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate Driver Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roD-Up-pm5">
@@ -1138,9 +1168,6 @@
                                                     <exclude reference="RSZ-OX-Ahs"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="YuI-hp-6Xd"/>
-                                                    <exclude reference="lxQ-x4-WBj"/>
-                                                    <exclude reference="nRO-ej-Voh"/>
                                                     <exclude reference="0pE-V2-FT2"/>
                                                     <exclude reference="3fa-Zh-o89"/>
                                                     <exclude reference="A8D-72-X7F"/>
@@ -1148,6 +1175,9 @@
                                                     <exclude reference="Dy6-J2-Rnz"/>
                                                     <exclude reference="Lsm-Wi-pDG"/>
                                                     <exclude reference="eVE-aa-AlK"/>
+                                                    <exclude reference="YuI-hp-6Xd"/>
+                                                    <exclude reference="lxQ-x4-WBj"/>
+                                                    <exclude reference="nRO-ej-Voh"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -1156,9 +1186,6 @@
                                                     <include reference="RSZ-OX-Ahs"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="YuI-hp-6Xd"/>
-                                                    <include reference="lxQ-x4-WBj"/>
-                                                    <include reference="nRO-ej-Voh"/>
                                                     <exclude reference="0pE-V2-FT2"/>
                                                     <include reference="3fa-Zh-o89"/>
                                                     <exclude reference="A8D-72-X7F"/>
@@ -1166,12 +1193,15 @@
                                                     <exclude reference="Dy6-J2-Rnz"/>
                                                     <include reference="Lsm-Wi-pDG"/>
                                                     <include reference="eVE-aa-AlK"/>
+                                                    <include reference="YuI-hp-6Xd"/>
+                                                    <include reference="lxQ-x4-WBj"/>
+                                                    <include reference="nRO-ej-Voh"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Qhc-HP-qGz">
-                                        <rect key="frame" x="0.0" y="548" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="504" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qhc-HP-qGz" id="Zbk-fl-cTv">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -1231,7 +1261,7 @@
                             <tableViewSection headerTitle="ADDITIONAL SERVICES" id="Fc1-vF-Fxn">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="No8-ME-Jhc">
-                                        <rect key="frame" x="0.0" y="504" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="599" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="No8-ME-Jhc" id="xek-5r-j4B">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -1267,8 +1297,8 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="O2H-Fg-b2C"/>
-                                                    <exclude reference="gcf-Pt-s7y"/>
                                                     <exclude reference="Tmy-fy-fdI"/>
+                                                    <exclude reference="gcf-Pt-s7y"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -1277,14 +1307,14 @@
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="O2H-Fg-b2C"/>
-                                                    <include reference="gcf-Pt-s7y"/>
                                                     <include reference="Tmy-fy-fdI"/>
+                                                    <include reference="gcf-Pt-s7y"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="8lV-k3-bvg">
-                                        <rect key="frame" x="0.0" y="548" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="643" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8lV-k3-bvg" id="zzx-7F-9tW">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -1337,7 +1367,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="3nw-55-0mE">
-                                        <rect key="frame" x="0.0" y="592" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="687" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3nw-55-0mE" id="KSO-eo-Awa">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -1390,7 +1420,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="4yl-5d-Ks1">
-                                        <rect key="frame" x="0.0" y="636" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="731" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4yl-5d-Ks1" id="9YW-h2-Kkw">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -1425,9 +1455,9 @@
                                                     <exclude reference="t7o-el-g3D"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="r65-cs-iGW"/>
                                                     <exclude reference="KQa-Qc-YiA"/>
                                                     <exclude reference="P5e-HG-mcM"/>
+                                                    <exclude reference="r65-cs-iGW"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -1435,9 +1465,9 @@
                                                     <include reference="t7o-el-g3D"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="r65-cs-iGW"/>
                                                     <include reference="KQa-Qc-YiA"/>
                                                     <include reference="P5e-HG-mcM"/>
+                                                    <include reference="r65-cs-iGW"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1599,20 +1629,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clemsonNight" translatesAutoresizingMaskIntoConstraints="NO" id="U0G-zQ-Vo2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-vZ-8ZD">
-                                <rect key="frame" x="30" y="74" width="340" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnu-vZ-8ZD">
+                                <rect key="frame" x="30" y="74" width="65" height="30"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-II-kc6">
-                                        <rect key="frame" x="20" y="20" width="300" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-II-kc6">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-QI-H3t">
-                                                <rect key="frame" x="20" y="20" width="300" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-QI-H3t">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAH-KW-nmi">
-                                                        <rect key="frame" x="20" y="20" width="300" height="40"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAH-KW-nmi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bWR-tX-BRX">
-                                                                <rect key="frame" x="20" y="20" width="300" height="40"/>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bWR-tX-BRX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="300" id="Ucj-br-OWm"/>
                                                                     <constraint firstAttribute="height" constant="40" id="t04-ds-MVr"/>

@@ -21,6 +21,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
 
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var enterDestinationTextField: SkyFloatingLabelTextField!
     
     
     
@@ -73,6 +74,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         
         //address.text = currentLocation.address.text
         
+        enterDestinationTextField.layer.cornerRadius = 5.0
+        enterDestinationTextField.clipsToBounds = true
 
         // Do any additional setup after loading the view.
     }
