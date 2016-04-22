@@ -21,8 +21,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
 
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var enterDestinationTextField: SkyFloatingLabelTextField!
-    
+    @IBOutlet weak var enterDestTextField: AutoCompleteTextField!
     
     
     @IBAction func getDir(sender: AnyObject) {
@@ -39,7 +38,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
     var selectedPin:MKPlacemark? = nil
     var firebase: Firebase?
     var geofire: GeoFire?
-    
+    let autocompleteController = UITableView(frame: CGRectMake(20, 150, 350,200))
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +56,19 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         geofire = GeoFire(firebaseRef: geofireRef)
         
         let locationSearchTable = storyboard!.instantiateViewControllerWithIdentifier("LocationSearchTable") as! LocationSearchTable
+        
+        
+        // define table view with autocomplete for locations
+        autocompleteController.dataSource = locationSearchTable
+        autocompleteController.scrollEnabled = true
+        autocompleteController.hidden = true
+        self.view!.addSubview(autocompleteController)
+        
+        
+        // probably deleting below
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         resultSearchController?.searchResultsUpdater = locationSearchTable
+
         let searchBar = resultSearchController!.searchBar
         searchBar.sizeToFit()
         searchBar.placeholder = "Enter a destination"
@@ -74,11 +85,27 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         
         //address.text = currentLocation.address.text
         
-        enterDestinationTextField.layer.cornerRadius = 5.0
-        enterDestinationTextField.clipsToBounds = true
-
+        enterDestTextField.layer.cornerRadius = 5.0
+        enterDestTextField.clipsToBounds = true
+        enterDestTextField.layer.shadowOpacity = 1.0
+        enterDestTextField.layer.shadowRadius = 2.0
+        
+        //enterDestTextField.autoCompleteStrings = locationSearchTable
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    
+    // possibly use this function to start a search table under the textbox
+    @IBAction func searchDestinations(sender: AnyObject) {
+        autocompleteController.hidden = false
+        
+        //enterDestinationTextField.
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -142,11 +169,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         let smallSquare = CGSize(width: 30, height: 30)
         let button = UIButton(frame: CGRect(origin: CGPointZero, size: smallSquare))
         button.setBackgroundImage(UIImage(named: "car"), forState: .Normal)
-        button.addTarget(self, action: Selector("getDirections"), forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: Selector("getDir"), forControlEvents: .TouchUpInside)
         pinView?.leftCalloutAccessoryView = button
         return pinView
     }
-    
     
 
 }

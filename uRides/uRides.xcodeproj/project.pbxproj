@@ -18,6 +18,10 @@
 		DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B99541C2CD3CF00E007BC /* LogInView.swift */; };
 		DF23E1841C97DBEC001EACB0 /* manageCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */; };
 		DF32742F1C977A7900E0CA5F /* cardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32742E1C977A7900E0CA5F /* cardViewController.swift */; };
+		DF492DAF1CC6A5AD005B53B2 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF492DAE1CC6A5AD005B53B2 /* AutoCompleteTextField.swift */; };
+		DF492DB11CC6B392005B53B2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF492DB01CC6B392005B53B2 /* Location.swift */; };
+		DF492DB31CC6B3E3005B53B2 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF492DB21CC6B3E2005B53B2 /* MKMapViewExtension.swift */; };
+		DF492DB51CC6B43D005B53B2 /* RiderMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF492DB41CC6B43D005B53B2 /* RiderMapView.swift */; };
 		DF5F5A781C3C1E2F005D6B40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A771C3C1E2F005D6B40 /* AudioToolbox.framework */; };
 		DF5F5A7A1C3C1E3D005D6B40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A791C3C1E3D005D6B40 /* CFNetwork.framework */; };
 		DF5F5A7C1C3C1E48005D6B40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5F5A7B1C3C1E48005D6B40 /* CoreGraphics.framework */; };
@@ -76,6 +80,10 @@
 		DF1626AB1C2DC223001D6036 /* uRidesBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uRidesBridgingHeader.h; sourceTree = "<group>"; };
 		DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageCardsViewController.swift; sourceTree = "<group>"; };
 		DF32742E1C977A7900E0CA5F /* cardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardViewController.swift; sourceTree = "<group>"; };
+		DF492DAE1CC6A5AD005B53B2 /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
+		DF492DB01CC6B392005B53B2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DF492DB21CC6B3E2005B53B2 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		DF492DB41CC6B43D005B53B2 /* RiderMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderMapView.swift; sourceTree = "<group>"; };
 		DF5F5A771C3C1E2F005D6B40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DF5F5A791C3C1E3D005D6B40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DF5F5A7B1C3C1E48005D6B40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -201,7 +209,11 @@
 		DF7B14281C2894F900DDE87E /* uRides */ = {
 			isa = PBXGroup;
 			children = (
+				DF492DAE1CC6A5AD005B53B2 /* AutoCompleteTextField.swift */,
 				5527D1381C7BC49200CB0CE5 /* LocationViewController.swift */,
+				DF492DB41CC6B43D005B53B2 /* RiderMapView.swift */,
+				DF492DB01CC6B392005B53B2 /* Location.swift */,
+				DF492DB21CC6B3E2005B53B2 /* MKMapViewExtension.swift */,
 				DF7B14291C2894F900DDE87E /* AppDelegate.swift */,
 				DF8DFD101CC5D4C10019F4CE /* EditName.swift */,
 				DF7B142B1C2894F900DDE87E /* ViewController.swift */,
@@ -442,13 +454,17 @@
 			files = (
 				DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */,
 				DF23E1841C97DBEC001EACB0 /* manageCardsViewController.swift in Sources */,
+				DF492DB11CC6B392005B53B2 /* Location.swift in Sources */,
+				DF492DB31CC6B3E3005B53B2 /* MKMapViewExtension.swift in Sources */,
 				55C8A1641C8D35760041DBB6 /* LocationSearchTable.swift in Sources */,
 				DF0B99551C2CD3CF00E007BC /* LogInView.swift in Sources */,
 				55B206931C91FFD400F10C69 /* DriverMap.swift in Sources */,
 				DF32742F1C977A7900E0CA5F /* cardViewController.swift in Sources */,
+				DF492DAF1CC6A5AD005B53B2 /* AutoCompleteTextField.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				5527D1391C7BC49200CB0CE5 /* LocationViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
+				DF492DB51CC6B43D005B53B2 /* RiderMapView.swift in Sources */,
 				DF6FD4F31C2C64EE00C9E1ED /* EmailValidation.swift in Sources */,
 				DF8DFD111CC5D4C10019F4CE /* EditName.swift in Sources */,
 				DF7B14321C2894F900DDE87E /* uRides.xcdatamodeld in Sources */,
