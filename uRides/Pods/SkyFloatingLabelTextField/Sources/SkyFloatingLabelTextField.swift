@@ -13,6 +13,20 @@ import UIKit
  */
 @IBDesignable
 public class SkyFloatingLabelTextField: UITextField {
+    /// A Boolean value that determines if the language displayed is LTR. Default value set automatically from the application language settings.
+    var isLTRLanguage = UIApplication.sharedApplication().userInterfaceLayoutDirection == .LeftToRight {
+        didSet {
+           self.updateTextAligment()
+        }
+    }
+    
+    private func updateTextAligment() {
+        if(self.isLTRLanguage) {
+            self.textAlignment = .Left
+        } else {
+            self.textAlignment = .Right
+        }
+    }
     
     // MARK: Animation timing
     
@@ -151,9 +165,6 @@ public class SkyFloatingLabelTextField: UITextField {
         }
     }
     
-    /// A Boolean value that determines whether the receiver discards `errorMessage` when the text input is changed.
-    public var discardsErrorMessageOnTextChange:Bool = true
-    
     /// The backing property for the highlighted property
     private var _highlighted = false
     
@@ -163,7 +174,7 @@ public class SkyFloatingLabelTextField: UITextField {
             return _highlighted
         }
         set {
-            self.setHighlighted(_highlighted, animated: true)
+            self.setHighlighted(newValue, animated: true)
         }
     }
     
@@ -203,7 +214,7 @@ public class SkyFloatingLabelTextField: UITextField {
     /// A Boolean value that determines whether the receiver has an error message.
     public var hasErrorMessage:Bool {
         get {
-            return self.errorMessage != nil
+            return self.errorMessage != nil && self.errorMessage != ""
         }
     }
     
@@ -227,7 +238,6 @@ public class SkyFloatingLabelTextField: UITextField {
     @IBInspectable
     override public var text:String? {
         didSet {
-            self.resetErrorMessageIfPresent()
             self.updateControl(false)
         }
     }
@@ -291,6 +301,7 @@ public class SkyFloatingLabelTextField: UITextField {
         self.createLineView()
         self.updateColors()
         self.addEditingChangedObserver()
+        self.updateTextAligment()
     }
     
     private func addEditingChangedObserver() {
@@ -301,12 +312,8 @@ public class SkyFloatingLabelTextField: UITextField {
      Invoked when the editing state of the textfield changes. Override to respond to this change.
      */
     public func editingChanged() {
-        self.resetErrorMessageIfPresent()
         updateControl(true)
         updateTitleLabel(true)
-        let range = NSMakeRange(0, self.text?.characters.count ?? 0)
-        // Because of subscribing to .EditingChanged, the error message was cleared for any delegate overriding the textField:shouldChangeCharactersInRange:replacementString method. Invoke this again to enable setting the error message on text change.
-        self.delegate?.textField?(self, shouldChangeCharactersInRange: range, replacementString: self.text ?? "")
     }
     
     // MARK: create components
@@ -347,7 +354,6 @@ public class SkyFloatingLabelTextField: UITextField {
     */
     override public func becomeFirstResponder() -> Bool {
         let result = super.becomeFirstResponder()
-        self.resetErrorMessageIfPresent()
         self.updateControl(true)
         return result
     }
@@ -433,8 +439,11 @@ public class SkyFloatingLabelTextField: UITextField {
         }
         self.titleLabel.text = titleText
         
-        let titleVisible = (titleText != nil) && self.hasText()
-        self.setTitleVisibile(titleVisible, animated: animated)
+        self.setTitleVisibile(self.isTitleVisible(), animated: animated)
+    }
+    
+    public func isTitleVisible() -> Bool {
+        return self.hasText() || self.hasErrorMessage
     }
     
     private func updateTitleVisibility(animated:Bool = false, animateFromCurrentState:Bool = false) {
@@ -560,7 +569,7 @@ public class SkyFloatingLabelTextField: UITextField {
     override public func layoutSubviews() {
         super.layoutSubviews()
         
-        self.titleLabel.frame = self.titleLabelRectForBounds(self.bounds, editing: self.hasText() || _renderingInInterfaceBuilder)
+        self.titleLabel.frame = self.titleLabelRectForBounds(self.bounds, editing: self.isTitleVisible() || _renderingInInterfaceBuilder)
         self.lineView.frame = self.lineViewRectForBounds(self.bounds, editing: self.editingOrSelected || _renderingInInterfaceBuilder)
     }
     
@@ -581,12 +590,6 @@ public class SkyFloatingLabelTextField: UITextField {
             _titleVisible = false
             self.updateTitleVisibility(animated, animateFromCurrentState: true)
             self.updateLineView()
-        }
-    }
-    
-    private func resetErrorMessageIfPresent() {
-        if self.hasErrorMessage && discardsErrorMessageOnTextChange {
-            self.errorMessage = nil
         }
     }
     

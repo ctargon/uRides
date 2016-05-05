@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OnO-cg-ozM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fV9-1O-Uo6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--ProfileNavController-->
+        <scene sceneID="ILn-8q-KP5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ProfileNavController" id="m9K-Av-034" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0P9-DW-b8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.25" y="-119.25"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="aCz-Lf-cqz">
             <objects>
@@ -48,8 +56,35 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="rRU-L8-jfw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XHz-my-Lzw">
+                            <connections>
+                                <segue destination="m9K-Av-034" kind="popoverPresentation" popoverAnchorBarButtonItem="XHz-my-Lzw" id="FgM-EW-qKj">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFt-qE-ZDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1227" y="262.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f9g-JI-HRY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fV9-1O-Uo6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q7z-bt-hZq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OnO-cg-ozM" kind="relationship" relationship="rootViewController" id="T1S-Al-RaJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6u-Ha-JDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="309" y="262.5"/>
         </scene>

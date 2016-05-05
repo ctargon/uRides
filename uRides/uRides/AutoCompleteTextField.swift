@@ -97,7 +97,7 @@ public class AutoCompleteTextField:UITextField {
     }
     
     private func setupAutocompleteTable(view:UIView){
-        let tableView = UITableView(frame: CGRectMake(30, 200, 320, 400))
+        let tableView = UITableView(frame: CGRectMake(30, 193, 317, 600))
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = autoCompleteCellHeight

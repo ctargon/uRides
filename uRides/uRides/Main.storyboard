@@ -497,9 +497,6 @@
                                         <include reference="Wat-au-D7w"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="getDir:" destination="UfM-fQ-ih6" eventType="touchUpInside" id="kUe-xk-CD2"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-tC-eQ2" customClass="AutoCompleteTextField" customModule="uRides" customModuleProvider="target">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -529,7 +526,9 @@
                             <constraint firstItem="MM0-Ea-FA2" firstAttribute="leading" secondItem="Nen-R9-9Xq" secondAttribute="leading" id="GdT-Vk-P2n"/>
                             <constraint firstAttribute="trailing" secondItem="6R8-ds-GgH" secondAttribute="trailing" id="IGr-hD-Ta2"/>
                             <constraint firstItem="ieg-tC-eQ2" firstAttribute="centerY" secondItem="Nen-R9-9Xq" secondAttribute="centerY" id="NSG-sp-Zcv"/>
-                            <constraint firstItem="ieg-tC-eQ2" firstAttribute="top" secondItem="xY0-0r-43Z" secondAttribute="bottom" constant="130" id="PSI-oU-pS0"/>
+                            <constraint firstItem="ieg-tC-eQ2" firstAttribute="top" secondItem="xY0-0r-43Z" secondAttribute="bottom" constant="130" id="PSI-oU-pS0">
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                            </constraint>
                             <constraint firstItem="mtZ-0E-cLc" firstAttribute="top" secondItem="MM0-Ea-FA2" secondAttribute="bottom" id="T6W-th-AVN"/>
                             <constraint firstItem="MM0-Ea-FA2" firstAttribute="top" secondItem="xY0-0r-43Z" secondAttribute="bottom" id="e1n-DL-J5X"/>
                             <constraint firstItem="mtZ-0E-cLc" firstAttribute="top" secondItem="6R8-ds-GgH" secondAttribute="bottom" id="ha2-g7-V4t"/>
@@ -577,12 +576,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="uRides" id="rkO-TM-qzQ">
-                        <barButtonItem key="leftBarButtonItem" image="1451984833_Cog" id="30O-j0-Jjp"/>
-                        <barButtonItem key="rightBarButtonItem" image="1451785522_User" id="luP-cL-dea">
+                        <barButtonItem key="leftBarButtonItem" image="1451785522_User" id="AGv-yw-Gza">
                             <connections>
-                                <segue destination="XpZ-tQ-l8H" kind="show" id="nxr-kP-0G4"/>
+                                <segue destination="XpZ-tQ-l8H" kind="showDetail" id="udL-c1-fqO"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="1462493418_common-star-favorite-bookmark-outline-stroke" id="Oo4-UH-SW3"/>
                     </navigationItem>
                     <connections>
                         <outlet property="autocompleteTextfield" destination="ieg-tC-eQ2" id="WHc-LQ-eNh"/>
@@ -666,7 +665,7 @@
         <!--Profile-->
         <scene sceneID="DH0-eN-KZL">
             <objects>
-                <tableViewController id="NKj-uf-IS3" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Profile" id="NKj-uf-IS3" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ved-eb-iS1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2120,7 +2119,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weD-U5-E1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5250" y="783.75"/>
+            <point key="canvasLocation" x="5211" y="783.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O8W-XC-NFE">
@@ -2161,7 +2160,7 @@
         <!--Navigation Controller-->
         <scene sceneID="eS0-I9-MmY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XpZ-tQ-l8H" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileNavController" automaticallyAdjustsScrollViewInsets="NO" id="XpZ-tQ-l8H" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bf4-9c-7UY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2257,18 +2256,18 @@
     </scenes>
     <resources>
         <image name="1451785522_User" width="24" height="24"/>
-        <image name="1451984833_Cog" width="24" height="24"/>
         <image name="1451985489_Left_2" width="24" height="24"/>
+        <image name="1462493418_common-star-favorite-bookmark-outline-stroke" width="32" height="32"/>
         <image name="Logo" width="834" height="464"/>
         <image name="NewclemsonResolute" width="868" height="1317"/>
         <image name="clemsonNight" width="339" height="560"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XNT-oP-imf"/>
-        <segue reference="JOZ-O6-9nD"/>
-        <segue reference="Jij-WG-MFZ"/>
-        <segue reference="LE0-Tb-eCA"/>
         <segue reference="GE8-AE-MxX"/>
-        <segue reference="WN7-D8-jc8"/>
+        <segue reference="LE0-Tb-eCA"/>
+        <segue reference="Jij-WG-MFZ"/>
+        <segue reference="p17-bY-2Hp"/>
+        <segue reference="JOZ-O6-9nD"/>
+        <segue reference="tPJ-fj-Eeb"/>
     </inferredMetricsTieBreakers>
 </document>
