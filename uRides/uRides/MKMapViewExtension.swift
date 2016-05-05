@@ -65,9 +65,9 @@ extension MKMapView{
         return MKCoordinateSpan(latitudeDelta: latitudeDelta, longitudeDelta: longitudeDelta)
     }
     
-    func setCenterCoordinate(centerCoordinate:CLLocationCoordinate2D, var zoomLevel:Double, animated:Bool){
+    func setCenterCoordinate(centerCoordinate:CLLocationCoordinate2D, zoomLevel:Double, animated:Bool){
         // clamp large numbers to 28
-        zoomLevel = min(zoomLevel, 28)
+        let zoomLevel = min(zoomLevel, 28)
         
         // use the zoom level to compute the region
         let span = self.coordinateSpanWithCenterCoordinate(centerCoordinate, zoomLevel: zoomLevel)

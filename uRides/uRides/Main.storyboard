@@ -544,16 +544,16 @@
                                 <exclude reference="ieg-tC-eQ2"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GdT-Vk-P2n"/>
-                                <exclude reference="e1n-DL-J5X"/>
-                                <exclude reference="kbp-vh-Hhk"/>
+                                <exclude reference="T6W-th-AVN"/>
+                                <exclude reference="ha2-g7-V4t"/>
                                 <exclude reference="NSG-sp-Zcv"/>
                                 <exclude reference="PSI-oU-pS0"/>
                                 <exclude reference="iyU-Ku-wue"/>
                                 <exclude reference="IGr-hD-Ta2"/>
                                 <exclude reference="pDJ-fK-Jqh"/>
-                                <exclude reference="T6W-th-AVN"/>
-                                <exclude reference="ha2-g7-V4t"/>
+                                <exclude reference="GdT-Vk-P2n"/>
+                                <exclude reference="e1n-DL-J5X"/>
+                                <exclude reference="kbp-vh-Hhk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -563,16 +563,16 @@
                                 <include reference="ieg-tC-eQ2"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GdT-Vk-P2n"/>
-                                <include reference="e1n-DL-J5X"/>
-                                <include reference="kbp-vh-Hhk"/>
+                                <include reference="T6W-th-AVN"/>
+                                <include reference="ha2-g7-V4t"/>
                                 <exclude reference="NSG-sp-Zcv"/>
                                 <include reference="PSI-oU-pS0"/>
                                 <include reference="iyU-Ku-wue"/>
                                 <include reference="IGr-hD-Ta2"/>
                                 <include reference="pDJ-fK-Jqh"/>
-                                <include reference="T6W-th-AVN"/>
-                                <include reference="ha2-g7-V4t"/>
+                                <include reference="GdT-Vk-P2n"/>
+                                <include reference="e1n-DL-J5X"/>
+                                <include reference="kbp-vh-Hhk"/>
                             </mask>
                         </variation>
                     </view>

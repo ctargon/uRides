@@ -75,7 +75,7 @@ public class AutoCompleteTextField:UITextField {
         tableView.delegate = self
         tableView.rowHeight = autoCompleteCellHeight
         tableView.hidden = hidesWhenEmpty ?? true
-        superview!.addSubview(tableView)
+        //superview!.addSubview(tableView)
         autoCompleteTableView = tableView
         
         autoCompleteTableHeight = 100.0
@@ -97,7 +97,7 @@ public class AutoCompleteTextField:UITextField {
     }
     
     private func setupAutocompleteTable(view:UIView){
-        let tableView = UITableView(frame: CGRectMake(75, 200, 300, 300.0))
+        let tableView = UITableView(frame: CGRectMake(30, 200, 320, 400))
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = autoCompleteCellHeight
