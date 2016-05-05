@@ -58,7 +58,7 @@ public class AutoCompleteTextField:UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
-        setupAutocompleteTable(superview!)
+        setupAutocompleteTable(<#T##view: UIView##UIView#>)
     }
     
     public required init?(coder aDecoder: NSCoder) {

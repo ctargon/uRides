@@ -8,36 +8,58 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>GeoFire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>PaymentKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-uRides.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SkyFloatingLabelTextField.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>Stripe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>09EB60607090AEAF00258B4DFE93F28B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1520003FEBEC114D6C84F832AFEDB994</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +74,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>574F7550DA0FB4FB9D5858BDA4081F95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>58A0881F19EC5B7BC61BF65BF17E4158</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B9EC0A96ED500DBE963DBB4935223D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +100,11 @@
 			<true/>
 		</dict>
 		<key>CEC5B3D56C0273B989703BD53F6C9295</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2258E514ED0842515E9212F9CA02759</key>
 		<dict>
 			<key>primary</key>
 			<true/>
