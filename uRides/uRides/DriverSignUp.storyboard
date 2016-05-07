@@ -8,7 +8,7 @@
         <!--ProfileNavController-->
         <scene sceneID="ILn-8q-KP5">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="ProfileNavController" id="m9K-Av-034" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileNavController" id="m9K-Av-034" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0P9-DW-b8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.25" y="-119.25"/>

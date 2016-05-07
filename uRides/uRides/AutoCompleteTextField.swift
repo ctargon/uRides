@@ -75,7 +75,7 @@ public class AutoCompleteTextField:UITextField {
         tableView.delegate = self
         tableView.rowHeight = autoCompleteCellHeight
         tableView.hidden = hidesWhenEmpty ?? true
-        //superview!.addSubview(tableView)
+        //self.superview!.addSubview(tableView)
         autoCompleteTableView = tableView
         
         autoCompleteTableHeight = 100.0

@@ -45,6 +45,10 @@
 		DF8DFD0F1CC5CB5D0019F4CE /* DriverSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */; };
 		DF8DFD111CC5D4C10019F4CE /* EditName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8DFD101CC5D4C10019F4CE /* EditName.swift */; };
 		DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */; };
+		DFAD6A081CDDE95300CB4F5C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD6A071CDDE95300CB4F5C /* Profile.storyboard */; };
+		DFAD6A0C1CDDEA8900CB4F5C /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD6A0B1CDDEA8900CB4F5C /* Favorites.storyboard */; };
+		DFAD6A0E1CDDEB3700CB4F5C /* UserSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD6A0D1CDDEB3700CB4F5C /* UserSignUp.storyboard */; };
+		DFAD6A101CDDF42600CB4F5C /* EditPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD6A0F1CDDF42600CB4F5C /* EditPhoneNumber.swift */; };
 		DFF476631C2B510000A39059 /* StudentCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF476621C2B510000A39059 /* StudentCheck.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +118,10 @@
 		DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DriverSignUp.storyboard; sourceTree = "<group>"; };
 		DF8DFD101CC5D4C10019F4CE /* EditName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditName.swift; sourceTree = "<group>"; };
 		DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningPage.swift; sourceTree = "<group>"; };
+		DFAD6A071CDDE95300CB4F5C /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		DFAD6A0B1CDDEA8900CB4F5C /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		DFAD6A0D1CDDEB3700CB4F5C /* UserSignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserSignUp.storyboard; sourceTree = "<group>"; };
+		DFAD6A0F1CDDF42600CB4F5C /* EditPhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPhoneNumber.swift; sourceTree = "<group>"; };
 		DFF476621C2B510000A39059 /* StudentCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +224,7 @@
 				DF492DB21CC6B3E2005B53B2 /* MKMapViewExtension.swift */,
 				DF7B14291C2894F900DDE87E /* AppDelegate.swift */,
 				DF8DFD101CC5D4C10019F4CE /* EditName.swift */,
+				DFAD6A0F1CDDF42600CB4F5C /* EditPhoneNumber.swift */,
 				DF7B142B1C2894F900DDE87E /* ViewController.swift */,
 				DFA07DD81C2B4BDD00E76626 /* OpeningPage.swift */,
 				55C8A1631C8D35760041DBB6 /* LocationSearchTable.swift */,
@@ -224,9 +233,7 @@
 				DF32742E1C977A7900E0CA5F /* cardViewController.swift */,
 				55B206901C91DD6000F10C69 /* SettingsView.swift */,
 				DF0B99541C2CD3CF00E007BC /* LogInView.swift */,
-				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
-				DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */,
-				DF8DFD0C1CC5C82C0019F4CE /* Driver.storyboard */,
+				DFAD6A0A1CDDE9A100CB4F5C /* Storyboards */,
 				DF23E1831C97DBEC001EACB0 /* manageCardsViewController.swift */,
 				55B206921C91FFD400F10C69 /* DriverMap.swift */,
 				DF83DFA61C33579500F6A36E /* ViewController.h */,
@@ -256,6 +263,19 @@
 				DF7B144E1C2894F900DDE87E /* Info.plist */,
 			);
 			path = uRidesUITests;
+			sourceTree = "<group>";
+		};
+		DFAD6A0A1CDDE9A100CB4F5C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE041A1C29EBA1005E0A4C /* Main.storyboard */,
+				DFAD6A0D1CDDEB3700CB4F5C /* UserSignUp.storyboard */,
+				DFAD6A0B1CDDEA8900CB4F5C /* Favorites.storyboard */,
+				DFAD6A071CDDE95300CB4F5C /* Profile.storyboard */,
+				DF8DFD0E1CC5CB5D0019F4CE /* DriverSignUp.storyboard */,
+				DF8DFD0C1CC5C82C0019F4CE /* Driver.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,8 +397,11 @@
 				DF8DFD0D1CC5C82C0019F4CE /* Driver.storyboard in Resources */,
 				DAFE04151C28B193005E0A4C /* Images.xcassets in Resources */,
 				DF8DFD0F1CC5CB5D0019F4CE /* DriverSignUp.storyboard in Resources */,
+				DFAD6A0E1CDDEB3700CB4F5C /* UserSignUp.storyboard in Resources */,
 				DF7B14341C2894F900DDE87E /* Assets.xcassets in Resources */,
 				DAFE04191C29EA94005E0A4C /* loadScreen.storyboard in Resources */,
+				DFAD6A081CDDE95300CB4F5C /* Profile.storyboard in Resources */,
+				DFAD6A0C1CDDEA8900CB4F5C /* Favorites.storyboard in Resources */,
 				DAFE041B1C29EBA1005E0A4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +484,7 @@
 				55B206931C91FFD400F10C69 /* DriverMap.swift in Sources */,
 				DF32742F1C977A7900E0CA5F /* cardViewController.swift in Sources */,
 				DF492DAF1CC6A5AD005B53B2 /* AutoCompleteTextField.swift in Sources */,
+				DFAD6A101CDDF42600CB4F5C /* EditPhoneNumber.swift in Sources */,
 				DF7B142C1C2894F900DDE87E /* ViewController.swift in Sources */,
 				5527D1391C7BC49200CB0CE5 /* LocationViewController.swift in Sources */,
 				DFA07DD91C2B4BDD00E76626 /* OpeningPage.swift in Sources */,
