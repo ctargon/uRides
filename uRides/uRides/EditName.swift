@@ -20,12 +20,12 @@ class EditName: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let firstName = SkyFloatingLabelTextField(frame: CGRectMake(80, 225, 200, 45))
+        let firstName = SkyFloatingLabelTextField(frame: CGRectMake(50, 225, 260, 45))
         firstName.placeholder = "First"
         firstName.title = "Your first name"
         self.view.addSubview(firstName)
         
-        let lastName = SkyFloatingLabelTextField(frame: CGRectMake(80, 280, 200, 45))
+        let lastName = SkyFloatingLabelTextField(frame: CGRectMake(50, 280, 260, 45))
         lastName.placeholder = "Last"
         lastName.title = "Your last name"
         self.view.addSubview(lastName)

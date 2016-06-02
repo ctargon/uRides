@@ -8,8 +8,9 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class RiderMapView: UIViewController {
+class RiderMapView: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var autocompleteTextfield: AutoCompleteTextField!
@@ -21,11 +22,37 @@ class RiderMapView: UIViewController {
     private let googleMapsKey = "AIzaSyDfE_qOmempF0nwnSqFIcWHPej8WTEQPNk"
     private let baseURLString = "https://maps.googleapis.com/maps/api/place/autocomplete/json"
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configureTextField()
         handleTextFieldInterfaces()
+
+        // allow map to open at current location
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+        self.mapView.showsUserLocation = true
+        
+        // transluscent nav bar?
+
+    }
+    
+    // MARK - Location Manager Methods
+    func locationManager (manager:CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations.last
+        
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        
+        self.mapView.setRegion(region, animated: true)
+        
+        self.locationManager.stopUpdatingLocation()
     }
     
     override func didReceiveMemoryWarning() {

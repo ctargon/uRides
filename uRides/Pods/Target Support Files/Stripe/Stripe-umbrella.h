@@ -13,8 +13,6 @@
 #import "STPToken.h"
 #import "Stripe.h"
 #import "StripeError.h"
-#import "STPCheckoutOptions.h"
-#import "STPCheckoutViewController.h"
 #import "STPAPIClient+ApplePay.h"
 #import "Stripe+ApplePay.h"
 #import "STPPaymentCardTextField.h"
