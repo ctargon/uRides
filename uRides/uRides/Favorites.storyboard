@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--map-->
+        <scene sceneID="pcV-Xh-8lv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="map" id="wyJ-hl-QgY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDa-WH-nPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803.25" y="-123.75"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Izc-7J-P6H">
             <objects>
@@ -18,7 +26,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pXg-NC-efQ"/>
+                    <navigationItem key="navigationItem" id="pXg-NC-efQ">
+                        <barButtonItem key="leftBarButtonItem" image="1451985489_Left_2" id="gK4-8B-E34">
+                            <connections>
+                                <segue destination="wyJ-hl-QgY" kind="show" id="jn6-BP-00B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAB-Yp-XRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +57,7 @@
             <point key="canvasLocation" x="291" y="244.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1451985489_Left_2" width="24" height="24"/>
+    </resources>
 </document>

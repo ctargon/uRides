@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="200" id="ZSG-68-RfS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -52,12 +53,12 @@
                                 <exclude reference="4ig-zM-nzG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="buu-0C-oxP"/>
                                 <exclude reference="5ZR-1X-AfI"/>
                                 <exclude reference="BOt-pa-BDP"/>
                                 <exclude reference="HRP-Wt-sDu"/>
                                 <exclude reference="JJl-ys-QtG"/>
                                 <exclude reference="qVQ-Dt-5sj"/>
-                                <exclude reference="buu-0C-oxP"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -65,12 +66,12 @@
                                 <include reference="4ig-zM-nzG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="buu-0C-oxP"/>
                                 <exclude reference="5ZR-1X-AfI"/>
                                 <include reference="BOt-pa-BDP"/>
                                 <include reference="HRP-Wt-sDu"/>
                                 <exclude reference="JJl-ys-QtG"/>
                                 <exclude reference="qVQ-Dt-5sj"/>
-                                <exclude reference="buu-0C-oxP"/>
                             </mask>
                         </variation>
                     </view>
