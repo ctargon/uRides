@@ -1,6 +1,6 @@
 # uRides
 
-uRides is a student-to-student driving service founded by Colin Targonski, Caleb Sarnecki, and Jack Friedman. 
+uRides is a student-to-student driving service application. 
 
 # Git Hub Basic Commands
 
