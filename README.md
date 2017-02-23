@@ -42,42 +42,4 @@ useful site for icons
 
 https://www.iconfinder.com/icons/722666/arrow_direction_left_previous_icon#size=24
 
-----------------------------------------------------------------------------------
 
-1/20/2016 Branching and Merging 
-
-Read this! 
-
-https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
-
-1.) To create a branch and switch to it:
-
-git checkout -b [branchName]
-
-*do work*
-
-*make sure it works* 
-
-git commit -a -m [‘comment’]
-
-2.) Checkout what you want to merge with, in most cases master
-
-git checkout master 
-
-3.)Merge your branch into the master
-
-git merge [branchName]
-
-To delete the branch once merged back (if you want)
-
-git branch -d [branchName]
-
-4.) If conflicts arise 
-
-git mergetool 
-
-attempt to resolve 
-
-5.) On branch master, to commit your local changes:
-
-git push
